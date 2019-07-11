@@ -1,0 +1,127 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  //// If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+  //  // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  //// If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    +"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin transition($prop: all) {
+  transition: $prop 0.3s ease-in;
+}
+
+@mixin transition-04() {
+  transition: 0.4s all ease-in-out;
+}
+
+/*-------------Placeholder------------*/
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+/*---------------LAYOUT---------------*/
+@mixin center {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin horizontally-centered {
+  left: 0;
+  right: 0;
+}
+
+@mixin vertically-centered {
+  top: 0;
+  bottom: 0;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin respond-min($min) {
+  @media screen and (min-width: $min+px) {
+    @content;
+  }
+}
+
+@mixin respond-min-max($min, $max) {
+  @media screen and (min-width: $min+px) and (max-width: $max+px) {
+    @content;
+  }
+}
+
+@mixin respond-max($max) {
+  @media screen and (max-width: $max+px) {
+    @content;
+  }
+}

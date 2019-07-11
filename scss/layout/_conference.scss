@@ -1,0 +1,42 @@
+/*--- CONFERENCE ---*/
+.conference{
+	text-align: center;
+	&__img{
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    object-fit: cover;
+	    object-position: top;
+	    min-height: 568px;	
+	    @include respond-to(md){
+	    	max-height: 502px;
+	    }
+	}
+	&__text-wrap{
+		position: relative;
+		z-index: 2;
+		color: $white-color;
+		padding: $gap 0;
+		@include respond-to(md){
+			padding: 1.5 * $gap 0;
+		}
+		p{
+		    margin-top: 14.5px;
+		    margin-bottom: 34.5px;
+		    font-size: 1.1rem;
+		    font-weight: 300;
+	        line-height: 1.65rem;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding: 0 0.5rem;
+		    @include respond-to(md){
+		    	margin-top: 0.5 * $gap;
+		    	max-width: 50%;
+	    	 	line-height: 1.6rem;
+	    	 	padding: 0;
+	    	 	margin-bottom: $gap;
+		    }
+		}
+	}
+}
+/*--- /CONFERENCE ---*/

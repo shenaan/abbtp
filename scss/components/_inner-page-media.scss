@@ -1,0 +1,102 @@
+/*Images and videos*/
+
+.inner-page__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+//inner wrap for img and videos
+.inner-page__media-item{
+  display: flex;
+}
+
+.inner-page__media-attribution {
+  font-size: 0.77rem;
+  padding: 13px 20px;
+  background-color: rgba(135, 135, 135, 1);
+  color: #fff;
+
+  @include respond-to(md) {
+    padding: 13px;
+    display: block;
+  }
+}
+
+//Fullwidth media item with background
+
+.inner-page__media--fullwidth{
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 267px;
+
+  .inner-page__media-attribution{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .container{
+    background-color: rgba(135, 135, 135, 1);
+  }
+
+  @include respond-to(md) {
+    height: 539px;
+
+    .container{
+      background-color: transparent;
+    }
+
+    .inner-page__media-attribution{
+      width: fit-content;
+      padding-left: 20px;
+    }
+  }
+}
+
+.inner-page__video{
+  position: relative;
+  video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.inner-page__media-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+  @include square(75px);
+  border-radius: 100%;
+  @include transition();
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  svg{
+    display: block;
+    @include size(26px, 36px);
+    margin-left: 10px;
+    fill: $yellow-color;
+    @include transition();
+  }
+
+  &:hover, &:focus, &:active{
+    svg{
+      fill: #fff;
+    }
+  }
+
+  @include respond-to(md){
+    @include square(130px);
+    svg{
+      font-size: 55px;
+      @include size(46px, 56px);
+    }
+  }
+}

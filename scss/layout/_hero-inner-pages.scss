@@ -1,0 +1,33 @@
+.hero--inner-page {
+  position: relative;
+  min-height: 371px;
+
+  .hero__text-wrap {
+    min-height: auto;
+    padding: 184px 0 90px 0;
+    color: #fff;
+  }
+  @include respond-to(md) {
+    .hero__text-wrap {
+      padding: 237px 0 52px 0;
+    }
+  }
+}
+
+.hero__bg--inner-page {
+  background-color: $dark-color;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 303px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  @include respond-to(md) {
+    min-height: 100%;
+  }
+}

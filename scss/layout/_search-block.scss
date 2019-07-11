@@ -1,0 +1,24 @@
+/*--- SEARCH BLOCK ---*/
+.search-block{
+	background: linear-gradient(to right, #f3e600, #ffcc00);
+    padding-top: $gap;
+    text-align: center;
+    padding-bottom: 1.5 * $gap;
+    .search{
+    	margin-top: 0.5 * $gap;
+    	@include respond-to(md){
+		    max-width: 61%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-bottom: 0;
+    	}
+    	input{
+		    line-height: 2.55;
+    	}
+    	button{
+		    font-size: 1.5rem;
+    		padding: 0 13px;
+    	}
+    }
+}
+/*--- /SEARCH BLOCK ---*/

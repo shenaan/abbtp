@@ -1,0 +1,17 @@
+.intro--inner-page__blockquote{
+  background: $yellow-gradient;
+  padding-top: $gap*2;
+  padding-bottom: $gap*2;
+  text-align: center;
+
+  blockquote{
+    border-bottom: none;
+    p{
+      max-width: 700px;
+      @include center();
+    }
+    span{
+      line-height: 1.6rem;
+    }
+  }
+}

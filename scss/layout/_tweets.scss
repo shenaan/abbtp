@@ -1,0 +1,74 @@
+/*--- TWEETS ---*/
+.tweets{
+    padding-top: 14.5px;
+   	text-align: center;
+   	padding-bottom: 1.5 * $gap;
+   	@include respond-to(md){
+   		padding-top: 1.5 * $gap;
+   	}
+   	.owl-carousel{
+   		margin: 0;
+   	}
+   	&__wrap{
+   		margin-top: $gap;
+   		margin-bottom: 52px;
+   		position: relative;
+   		@include respond-to(md){
+	        padding: 0 35px;
+		    display: flex;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+
+   		}
+   	}
+    .owl-carousel .owl-nav{
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: -20px;
+	    right: -20px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+        padding-bottom: 50px;
+	    @include respond-to(md){
+    	    left: 10px;
+    		right: 10px;
+	    }
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    	background: $white-color;
+    	width: 35px;
+    	height: 35px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	&:focus{
+    		outline: none;
+    	}
+    	@include respond-to(md){
+    		width: 43px;
+    		height: 43px;
+    	}
+    }
+    .owl-carousel .owl-nav button{
+    	span {
+	        background-repeat: no-repeat;
+		    font-size: 0;
+		    background-image: url(../img/arrow-left.svg);
+		    width: 13px;
+		    height: 25px;
+		    display: block;
+		    @include respond-to(md){
+		    	width: 16px;
+		    	height: 30px;
+		    }
+		}
+		&.owl-next{
+			span{
+				transform: rotate(180deg);
+			}
+		}
+	} 
+}
+/*--- /TWEETS ---*/

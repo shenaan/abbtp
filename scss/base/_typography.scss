@@ -1,0 +1,138 @@
+/**
+ * Basic typography style for copy text
+ */
+
+html {
+    // This defines what 1 rem is
+    font-size: 18px;
+}
+*{
+  -webkit-font-smoothing: antialiased;
+}
+body {
+    color: $text-color;
+    font: normal 1rem $text-font-stack;
+    letter-spacing: 0.25px;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h4{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.link {
+    color: $white-color;
+    font-weight: 600;
+    font-size: 1.5rem;
+    max-width: 290px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    &:after{
+      content: "";
+      width: 100%;
+      margin: 0 auto;
+      background: $yellow-color;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include transition;
+    }
+    &:hover{
+      &:after{
+            width: 30px;
+      }
+    }
+    @include respond-to(md){
+        font-size: 1.7rem;
+        max-width: 40%;
+        padding: 10px 0;
+    }
+    &--dark{
+      color: $dark-color;
+      @include respond-to(md){
+        max-width: 100%;
+      }
+    }
+    &--small{
+      font-size: 1rem;
+      display: inline-block;
+      @include respond-to(md){
+        font-size: 1.1rem;
+      }
+    }
+  &--xs{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 5px 0;
+    display: inline-block;
+  }
+
+}
+.link-more{
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+  font-weight: bold;
+  line-height: 18px;
+  img{
+    width: 10px !important;
+    height: 15px;
+    margin-left: 3px;
+    @include transition;
+  }
+  &:hover{
+    img{
+        transform: translateX(45px);
+        margin-left: 0;
+    }
+  }
+}
+
+//typography for general inner pages
+
+.inner-page__content-wrap{
+  h1{
+    font-size: 1.55rem;
+    @include respond-to(md){
+      font-size: 2.1rem;
+    }
+  }
+  h2{
+    font-size: 1.3rem; //24px
+    line-height: 1.8rem; //34px
+
+    &.h2--lg{
+      font-size: 1.55rem; //28px
+      line-height: 2.11rem; //38px
+    }
+  }
+  h3{
+    font-size: 1.1rem; //20px
+    line-height: 1.66rem;  //30px
+  }
+  h4{
+    font-size: 1rem;
+    line-height: 1.66rem;
+  }
+  p{
+    margin-bottom: $gap*0.5;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/*--- BLOCKQUOTE ---*/
+blockquote{
+    padding: 16px 7px 12px;
+    border-bottom: 1px solid #0d0d0d;
+    margin-bottom: 0.8rem;
+    @include respond-to(md){
+	    padding: 16px 0 12px;
+	    margin-bottom: 0.5 * $gap;
+        text-align: center;
+    }
+	p{
+	    font-size: 1.5rem;
+	    font-weight: 500;
+	    line-height: 1.95rem;
+	    padding: 0 10px;
+	    @include respond-to(md){
+    	    font-size: 1.7rem;
+    		line-height: 2.2rem;
+    		padding: 0;
+    		&:before{
+			    margin-left: -19px;
+    		}
+    		&:after{
+    			margin-right: -19px;
+    		}
+	    }
+	    &:before{
+	    	content: '“';
+	    }
+	    &:after{
+	    	content: '”';
+	    }
+	}
+	span{
+	    font-size: 1.1rem;
+	    display: block;
+	    margin-top: 14px;
+	    @include respond-to(md){
+    	    margin-top: 6px;
+	    }
+	}
+}
+/*--- /BLOCKQUOTE ---*/

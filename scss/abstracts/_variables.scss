@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'BentonSans', sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$text-color: rgba(0, 0, 0, 0.95) !default;
+
+/// Copy text color
+/// @type Color
+$white-color: #fff;
+
+/// Copy background-color
+/// @type Background
+$dark-color: rgba(0, 0, 0, 0.95);
+
+/// Copy text color
+/// @type Color
+$yellow-color: #ffcc00;
+
+/// Copy text color
+/// @type Color
+$yellow-gradient: linear-gradient(to right, #f3e600, #ffcc00);
+
+/// Copy text color
+/// @type Color
+$light-color: #f2f2f2;
+
+//spacing gap
+$gap: 45px;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1320px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'xs': screen and (min-width: 572px),
+  'sm': screen and (min-width: 768px),
+  'md': screen and (min-width: 1024px),
+  'lg': screen and (min-width: 1280px),
+  'xl': screen and (min-width: 1440px),
+  'xxl': screen and (min-width: 1920px)
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

@@ -1,0 +1,21 @@
+/*Suggestions carousel*/
+
+.suggestions-carousel{
+  &.owl-carousel {
+    .owl-nav button.owl-next,.owl-nav button.owl-prev{
+      background: rgba(255,255,255,0.9);
+    }
+  }
+
+  @include respond-to(md){
+    margin: 0 -10px;
+  }
+}
+
+.suggestion-carousel__item{
+  @include respond-to(sm){
+    padding: 0 10px;
+  }
+}
+
+/*Suggestions carousel*/

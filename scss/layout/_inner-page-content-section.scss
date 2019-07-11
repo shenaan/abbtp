@@ -1,0 +1,25 @@
+.inner-page__content-section{
+  padding-top: $gap*1.5;
+  padding-bottom: $gap*1.5;
+
+  .inner-page__media{
+    margin-bottom: $gap;
+  }
+}
+
+.inner-page__content-block{
+  padding-bottom: $gap;
+
+  &:last-of-type{
+    padding-bottom: 0;
+  }
+  h2{
+    margin-bottom: 11px;
+  }
+  h3{
+    margin-bottom: 14px;
+  }
+  h4{
+    margin-bottom: 16px;
+  }
+}

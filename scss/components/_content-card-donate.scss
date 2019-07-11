@@ -1,0 +1,99 @@
+//Donate cards
+.content__card-donate {
+  padding-top: $gap;
+  padding-bottom: $gap;
+  h2 {
+    font-size: 1.55rem; //28px
+    line-height: 2.11rem; //38px
+  }
+  p{
+    font-size: 1.1rem;
+    line-height: 1.61rem;
+  }
+}
+
+.donate-form__wrap {
+  margin-top: 30px;
+}
+
+.donate-form__row {
+  margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  button, input {
+    height: 45px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include respond-to(sm) {
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+}
+
+.donate-form__row-col {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-bottom: 15px;
+
+  @include respond-to(sm) {
+    width: 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 0;
+  }
+}
+
+.donate-form__btn {
+  width: 100%;
+  background-color: $yellow-color;
+  font-size: 1.55rem; //28px
+  font-weight: bold;
+  cursor: pointer;
+
+  @include on-event(){
+    color: #fff;
+  }
+}
+
+.donate-form__input-wrap {
+  position: relative;
+  span {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    background-color: $dark-color;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.33rem;
+  }
+}
+
+.donate-form__input {
+  width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding-left: 75px;
+  @include input-placeholder() {
+    color: $dark-color;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+
+.donate-form__submit-btn {
+  width: 170px;
+  @include respond-to(sm) {
+    width: 100%;
+  }
+}

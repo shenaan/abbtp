@@ -1,0 +1,48 @@
+/*--- CENTERS ---*/
+.centers{
+    background: rgb(135, 135, 134);
+    color: $white-color;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 41px;
+    @include respond-to(md){
+    	text-align: left;
+	    padding-bottom: 15px;
+    	padding-top: 15px;
+
+    }
+    .container{
+    	@include respond-to(md){
+	    	display: flex;
+	    	align-items: center;
+    	    flex-wrap: wrap;
+	    }
+    }
+    &__item{
+	    margin-bottom: 38px;
+	    @include respond-to(md){
+	    	display: flex;
+	    	align-items: center;
+	    	margin-bottom: 0;
+    	    flex: 0 0 50%;
+	    }	
+	    p{
+		    font-size: 16px;
+	        margin-bottom: 20px;
+	        @include respond-to(md){
+	        	margin-bottom: 0;
+        	    margin-right: 54px;
+	        }
+	    }
+	    &__img{
+		    margin: 0 auto;
+		    @include respond-to(md){
+		    	margin: 0;
+		    }
+	    }
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+    }
+}
+/*--- /CENTERS ---*/

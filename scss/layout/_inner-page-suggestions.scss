@@ -1,0 +1,51 @@
+/*Suggestions section*/
+
+.inner-page__suggestions{
+  padding-top: $gap;
+  padding-bottom: $gap*1.5;
+  background: $yellow-gradient;
+  h2{
+    font-size: 1.55rem; //28px
+    line-height: 2.11rem; //38px
+    margin-bottom: $gap;
+  }
+}
+
+.suggestion__card{
+  background-color: #fff;
+  .link-more{
+    color: $dark-color;
+    margin-top: 8px;
+  }
+}
+
+.suggestion__card-img{
+  display: flex;
+  picture, img{
+    width: 100%;
+  }
+  img{
+    object-fit: cover;
+    object-position: center;
+    max-height: 300px;
+  }
+  @include respond-to(md){
+    img{
+      max-height: none;
+    }
+  }
+}
+
+.suggestion__card-content{
+  padding: $gap*0.5 10px 35px;
+  h4{
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  @include respond-to(md){
+    padding-bottom: $gap*0.5;
+  }
+}
+
+/*Suggestions section*/

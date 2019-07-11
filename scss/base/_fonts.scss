@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+  font-family: 'BentonSans';
+  src: url('../fonts/BentonSans-Bold.woff2') format('woff2'),
+    url('../fonts/BentonSans-Bold.woff') format('woff'),
+    url('../fonts/BentonSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSans';
+  src: url('../fonts/BentonSans-Book.woff2') format('woff2'),
+    url('../fonts/BentonSans-Book.woff') format('woff'),
+    url('../fonts/BentonSans-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSans';
+  src: url('../fonts/BentonSans-Light.woff2') format('woff2'),
+    url('../fonts/BentonSans-Light.woff') format('woff'),
+    url('../fonts/BentonSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'BentonSans';
+  src: url('../fonts/BentonSans-Medium.woff2') format('woff2'),
+    url('../fonts/BentonSans-Medium.woff') format('woff'),
+    url('../fonts/BentonSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'BentonSans';
+  src: url('../fonts/BentonSans-Regular.woff2') format('woff2'),
+    url('../fonts/BentonSans-Regular.woff') format('woff'),
+    url('../fonts/BentonSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
