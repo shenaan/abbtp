@@ -72,7 +72,7 @@ $(document).ready(function () {
         nav: false
       }
     }
-  })
+  });
 // /Owl Carousel
 
 
@@ -108,4 +108,35 @@ $(document).ready(function () {
       $(this).show();
     }
   });
+
+  //load members - members page
+  $('.member-list__load-link').on('click', function (e) {
+    e.preventDefault();
+    let $this = $(this);
+    let itemHidden = $this.parents('.members-list').find('.members-list__item.is-hidden');
+    if(itemHidden.length === 0) {
+      $this.addClass('is-inactive');
+    } else {
+        itemHidden.slice(0,4).fadeIn().removeClass('is-hidden');
+    }
+  });
+
+ $('.members-block__title-btn').on('click', function () {
+   let $this = $(this);
+   $this.parents('.members-block').find('.members-list__wrap').fadeToggle().toggleClass('is-hidden');
+   $this.find('span').toggleClass('is-hidden');
+ });
+
+ //FAQs page load items
+  $('.faqs__list-load-link').on('click', function (e) {
+    e.preventDefault();
+    let $this = $(this);
+    let itemHidden = $this.parents('.faqs__list').find('.faqs__list-item.is-hidden');
+    if(itemHidden.length === 0) {
+      $this.addClass('is-inactive');
+    } else {
+      itemHidden.slice(0,4).fadeIn().removeClass('is-hidden');
+    }
+  });
+
 });
