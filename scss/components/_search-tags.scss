@@ -1,0 +1,23 @@
+.search-tag__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -8px;
+}
+
+.search-tag__list-item{
+  padding:  0 8px;
+  margin-bottom: 16px;
+}
+
+.search-tag__list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $gap;
+  width: 135px;
+  color: $dark-color;
+  background: $yellow-color;
+}

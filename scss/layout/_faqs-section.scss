@@ -1,0 +1,8 @@
+.faqs-section{
+  padding: 32px 0;
+  background-color: $light-color;
+
+  @include respond-to(md){
+    padding: $gap 0;
+  }
+}

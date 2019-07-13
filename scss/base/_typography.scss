@@ -81,7 +81,10 @@ p{
     padding: 5px 0;
     display: inline-block;
   }
-
+  &.is-inactive{
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 .link-more{
   display: flex;
@@ -94,6 +97,10 @@ p{
     height: 15px;
     margin-left: 3px;
     @include transition;
+  }
+  &.is-inactive{
+    opacity: 0.5;
+    pointer-events: none;
   }
   &:hover{
     img{
@@ -131,8 +138,20 @@ p{
   }
   p{
     margin-bottom: $gap*0.5;
+
+    &.lead__text{
+      font-size: 1.1rem;
+      line-height: 16rem;
+    }
     &:last-of-type{
       margin-bottom: 0;
+    }
+  }
+
+  .lead__text-wrap{
+    p{
+      font-size: 1.1rem;
+      line-height: 16rem;
     }
   }
 }

@@ -1,0 +1,21 @@
+.search-filter__letters{
+  margin: 0 -4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-filter__letter{
+  width: 38px;
+  height: $gap;
+  background-color: $yellow-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  @include respond-to(md){
+    margin: 0 4px 8px;
+  }
+}

@@ -1,6 +1,6 @@
 .hero--inner-page {
   position: relative;
-  min-height: 371px;
+  padding-bottom: $gap;
 
   .hero__text-wrap {
     min-height: auto;
@@ -8,6 +8,8 @@
     color: #fff;
   }
   @include respond-to(md) {
+    min-height: 371px;
+    padding-bottom: 0;
     .hero__text-wrap {
       padding: 237px 0 52px 0;
     }

@@ -1,57 +1,85 @@
-.ad__card{
+.ad__card {
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
 
-  @include respond-to(md){
+  @include respond-to(md) {
     flex-wrap: nowrap;
   }
 }
 
-.ad__card-img{
+/*-----ad card with image-----*/
+.ad__card-img {
   width: 100%;
   max-width: 100%;
   display: flex;
-  picture{
+  picture {
     width: 100%;
   }
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     max-height: 300px;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     padding-right: 30px;
     width: 50%;
     max-width: 50%;
-    img{
+    img {
       max-height: none;
     }
   }
 }
 
-.ad__card-content{
+.ad__card-content {
   width: 100%;
   max-width: 100%;
   padding: 22px 15px 35px;
 
-  h2{
+  h2 {
     font-size: 1.55rem; //28px
     line-height: 2.11rem; //38px
   }
-  p{
+  p {
     font-size: 1.1rem;
     line-height: 1.6rem;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     padding: $gap 20px;
     width: 50%;
     max-width: 50%;
   }
 }
 
-.ad__card-link{
+.ad__card-link {
   margin-top: 13px;
+}
+
+/*-----ad card only text-----*/
+
+.ad__card__textonly {
+  background-color: transparent;
+
+  .ad__card-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  h2 {
+    margin-bottom: 26px;
+  }
+  .ad__card-link {
+    margin-top: $gap;
+  }
+
+  @include respond-to(md) {
+    h2 {
+      margin-bottom: 17px;
+    }
+    .ad__card-link {
+      margin-top: 30px;
+    }
+  }
 }
