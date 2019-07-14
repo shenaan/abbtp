@@ -15,9 +15,9 @@ $(document).ready(function () {
 
     if ($(window).width() < 768) {
       if (header.hasClass('is-opened')) {
-        disableScrolling();
+        // disableScrolling();
       } else {
-        enableScrolling();
+        // enableScrolling();
       }
     }
   });
@@ -123,15 +123,15 @@ $(document).ready(function () {
 
  $('.members-block__title-btn').on('click', function () {
    let $this = $(this);
-   $this.parents('.members-block').find('.members-list__wrap').fadeToggle().toggleClass('is-hidden');
+   $this.parents('.members-block').find('.members-list__wrap').slideToggle().toggleClass('is-hidden');
    $this.find('span').toggleClass('is-hidden');
  });
 
  //FAQs page load items
-  $('.faqs__list-load-link').on('click', function (e) {
+  $('.content-cards__load-link').on('click', function (e) {
     e.preventDefault();
     let $this = $(this);
-    let itemHidden = $this.parents('.faqs__list').find('.faqs__list-item.is-hidden');
+    let itemHidden = $this.parents('.content-cards__list').find('.content-cards__list-item.is-hidden');
     if(itemHidden.length === 0) {
       $this.addClass('is-inactive');
     } else {
