@@ -1,9 +1,29 @@
-.content__card {
-  padding-left: 30px;
-  padding-right: 30px;
+.content-card {
   background-color: #fff;
+  padding: 16px 10px 32px;
+  position: relative;
+  text-align: left;
 
-  p{
-    max-width: 765px;
+  h3 {
+    margin-bottom: 8px;
+    padding-right: 35px;
   }
+  a {
+    margin-top: 8px;
+    color: $dark-color;
+  }
+}
+
+.content-card__label {
+  background-color: $yellow-color;
+  font-weight: bold;
+  font-size: 0.88rem;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  border-radius: 50%;
+  @include square(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,41 @@
+.content-cards__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -9px;
+}
+
+
+.content-cards__list-item{
+  width: 100%;
+  max-width: 100%;
+  padding: 0 9px;
+  margin-bottom: $gap * 0.5;
+
+  &.content-cards__list-link{
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 0 10px;
+  }
+  &.is-hidden{
+    display: none;
+  }
+
+  @include respond-to(xs){
+    width: 50%;
+    max-width: 50%;
+  }
+  @include respond-to(md){
+    width: 33.33%;
+    max-width: 33.33%;
+    &.content-cards__list-link{
+      margin: $gap * 0.5 0 $gap;
+    }
+  }
+}
+
+.content-cards__list-link{
+  text-align: center;
+  a{
+    display: inline-block;
+  }
+}

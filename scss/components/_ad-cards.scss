@@ -54,7 +54,10 @@
 }
 
 .ad__card-link {
-  margin-top: 13px;
+  margin-top: 24px;
+  @include respond-to(md){
+    margin-top: 13px;
+  }
 }
 
 /*-----ad card only text-----*/

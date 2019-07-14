@@ -53,6 +53,9 @@
 
   @include respond-to(md){
     display: flex;
+    &.hide-in-mob{
+      display: flex;
+    }
   }
 }
 
@@ -67,16 +70,34 @@
   height: $gap;
   font-size: 1.1rem;
   font-weight: bold;
+  @include transition();
 }
 
 .search-block__btn--grey {
   background-color: #878787;
   color: #fff;
+
+  @include on-event(){
+    color: $dark-color;
+  }
 }
 
 .search-block__btn--yellow {
   background-color: $yellow-color;
   color: $dark-color;
+
+  @include on-event(){
+    color: #fff;
+  }
+}
+
+.search__link--yellow{
+  background-color: $yellow-color;
+  color: $dark-color;
+  @include transition();
+  @include on-event(){
+    color: #fff;
+  }
 }
 
 

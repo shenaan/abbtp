@@ -1,13 +1,17 @@
 .intro--inner-page {
 
   .lead__content {
-    padding-bottom: $gap;
+    padding-bottom: 37px;
     p {
       font-size: 1.1rem;
       line-height: 1.6rem;
     }
     @include respond-to(md) {
       padding-top: $gap;
+
+      .lead__content {
+        padding-bottom: $gap;
+      }
     }
   }
 }

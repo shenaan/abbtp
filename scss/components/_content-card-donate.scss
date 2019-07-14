@@ -1,7 +1,7 @@
 //Donate cards
-.content__card-donate {
-  padding-top: $gap;
-  padding-bottom: $gap;
+.content-card__donate {
+  background-color: #fff;
+  padding: $gap *0.5 15px 38px;
   h2 {
     font-size: 1.55rem; //28px
     line-height: 2.11rem; //38px
@@ -9,6 +9,10 @@
   p{
     font-size: 1.1rem;
     line-height: 1.61rem;
+    max-width: 765px;
+  }
+  @include respond-to(md){
+    padding: $gap 30px;
   }
 }
 
@@ -84,10 +88,11 @@
   font-size: 1.1rem;
   line-height: 1.6rem;
   padding-left: 75px;
+  display: inline-flex;
+  align-items: center;
   @include input-placeholder() {
     color: $dark-color;
     font-size: 1.1rem;
-    line-height: 1.6rem;
   }
 }
 

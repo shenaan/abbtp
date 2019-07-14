@@ -1,0 +1,43 @@
+.search-filter__offers{
+  padding: 0;
+  margin: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to(md){
+    flex-direction: row;
+  }
+}
+
+.search-filter__offer-item{
+  width: 100%;
+  max-width: 100%;
+  height: 45px;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  @include respond-to(sm){
+    width: 50%;
+    max-width: 50%;
+  }
+  @include respond-to(md){
+    width: 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+.search-filter__offer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+  padding: 0 5px;
+
+  @include on-event(){
+    color: #fff;
+  }
+  @include respond-to(md){
+    padding: 0;
+  }
+}

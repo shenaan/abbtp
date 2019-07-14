@@ -1,13 +1,20 @@
 /*Suggestions section*/
 
 .inner-page__suggestions{
-  padding-top: $gap;
+  padding-top: 30px;
   padding-bottom: $gap*1.5;
   background: $yellow-gradient;
   h2{
     font-size: 1.55rem; //28px
     line-height: 2.11rem; //38px
-    margin-bottom: $gap;
+    margin-bottom: 25px;
+  }
+  @include respond-to(md){
+    padding-top: $gap;
+    padding-bottom: $gap*1.5;
+    h2{
+      margin-bottom: $gap;
+    }
   }
 }
 
@@ -37,14 +44,14 @@
 }
 
 .suggestion__card-content{
-  padding: $gap*0.5 10px 35px;
+  padding: 16px 15px 35px;
   h4{
     line-height: 1.5rem;
     margin-bottom: 5px;
   }
 
   @include respond-to(md){
-    padding-bottom: $gap*0.5;
+    padding-bottom: $gap * 0.5;
   }
 }
 

@@ -1,9 +1,9 @@
 .owl-carousel .owl-nav {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
   left: -20px;
   right: -20px;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;

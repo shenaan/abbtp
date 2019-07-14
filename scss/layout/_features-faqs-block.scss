@@ -1,7 +1,8 @@
 .featured-faqs__block{
   padding: $gap * 1.5 0 0;
-  h2{
-    margin-bottom: $gap;
-    text-align: left;
-  }
+ .content-card{
+   p{
+     line-height: 1.22rem;
+   }
+ }
 }

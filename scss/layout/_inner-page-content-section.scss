@@ -1,14 +1,23 @@
 .inner-page__content-section{
-  padding-top: $gap*1.5;
+  padding-top: 26px;
   padding-bottom: $gap*1.5;
 
   .inner-page__media{
-    margin-bottom: $gap;
+    margin-bottom: 37px;
+  }
+
+  @include respond-to(md){
+    padding-top: $gap*1.5;
+    padding-bottom: $gap*1.5;
+
+    .inner-page__media{
+      margin-bottom: $gap;
+    }
   }
 }
 
 .inner-page__content-block{
-  padding-bottom: $gap;
+  padding-bottom: 37px;
 
   &:last-of-type{
     padding-bottom: 0;
@@ -21,5 +30,9 @@
   }
   h4{
     margin-bottom: 16px;
+  }
+
+  @include respond-to(md){
+    padding-bottom: $gap;
   }
 }

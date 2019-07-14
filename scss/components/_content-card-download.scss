@@ -1,16 +1,22 @@
 //Download cards
-.content__card-download {
-  padding-top: $gap*0.5;
-  padding-bottom: $gap*0.5;
+.content-card__download {
   background-color: #fff;
+  padding: 15px 15px $gap * 0.5;
+  p{
+    max-width: 765px;
+  }
+
+  @include respond-to(md){
+    padding: $gap * 0.5 30px;
+  }
 }
 
-.content__card-icon {
+.content-card__download-icon {
   display: inline-block;
   width: 16px;
 }
 
-.content__card-download-links {
+.content-card__download-links {
   margin: 14px 0 10px;
 }
 

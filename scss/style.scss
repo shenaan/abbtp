@@ -26,7 +26,12 @@
 'layout/hero-inner-pages',
 'layout/intro-inner-page',
 'layout/inner-page-content-section',
-'layout/inner-page-suggestions';
+'layout/inner-page-suggestions',
+'layout/search-block-white',
+'layout/members-section',
+'layout/ad-block-section',
+'layout/features-faqs-block',
+'layout/content-cards-section';
 
 // 5. Components
 @import 'components/buttons',
@@ -36,14 +41,19 @@
 'components/tweet',
 
 'components/inner-page-blockquote',
-'components/breadcrumbs',
+'components/page-submenu',
 'components/carousel',
 'components/inner-page-media',
 'components/citation',
 'components/content-card',
+'components/content-card-list',
 'components/content-card-download',
 'components/content-card-donate',
 'components/ad-cards',
-'components/suggestions-carousel';
+'components/suggestions-carousel',
+'components/search-letters',
+'components/search-tags',
+'components/search-filter-offers',
+'components/featured-block';
 
 

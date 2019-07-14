@@ -1,17 +1,24 @@
 .intro--inner-page__blockquote{
   background: $yellow-gradient;
-  padding-top: $gap*2;
-  padding-bottom: $gap*2;
+  padding-top: $gap;
+  padding-bottom: $gap;
   text-align: center;
 
   blockquote{
     border-bottom: none;
+    padding: 0;
+    margin: 0;
     p{
       max-width: 700px;
       @include center();
     }
     span{
-      line-height: 1.6rem;
+      margin-top: $gap * 0.5;
     }
+  }
+
+  @include respond-to(md){
+    padding-top: $gap * 2;
+    padding-bottom: $gap * 2;
   }
 }
