@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-  <title>FAQ</title>
+  <title>Membership offers</title>
   <meta name="description" content=""/>
   <meta
     name="viewport"
@@ -92,7 +92,7 @@
       <div class="container">
         <div class="hero__text-wrap">
           <h1>
-            FAQs
+            Membership offers
           </h1>
         </div>
       </div>
@@ -101,7 +101,9 @@
           <ul class="page-submenu">
             <li class="page-submenu__item"><a href="#" class="page-submenu__link">Resources & guidance</a></li>
             <li class="page-submenu__item"><a href="#" class="page-submenu__link">ABTT guidance</a></li>
-            <li class="page-submenu__item is-active"><a href="#" class="page-submenu__link">FAQs</a></li>
+            <li class="page-submenu__item"><a href="#" class="page-submenu__link">Technical resources</a></li>
+            <li class="page-submenu__item"><a href="#" class="page-submenu__link">Theatre iformation</a></li>
+            <li class="page-submenu__item is-active"><a href="#" class="page-submenu__link">Membership offers</a></li>
           </ul>
         </div>
       </div>
@@ -130,40 +132,24 @@
     <section class="search-block--white">
       <div class="container">
         <div class="search-block__inner">
-          <div class="container__inner--sm">
-            <h2>Search FAQs</h2>
-            <!--search block-->
-            <div class="search">
-              <form action="#">
-                <input type="text" class="search__input search__input--outline"/>
-                <button type="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-            <!--search block-->
-          </div>  <!--container--sm-->
+          <h2>Filter offers</h2>
 
-          <!--search tags-->
-          <ul class="search-tag__list">
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 1</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 2</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 3</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 4</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 5</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 6</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 7</a></li>
-            <li class="search-tag__list-item"><a href="#" class="search__link--yellow search-tag__list-link">Tag 8</a></li>
+          <!--filters-->
+          <ul class="search-filter__offers">
+            <li class="search-filter__offer-item"><a href="#" class="search__link--yellow search-filter__offer-link" data-target="offers">Offers and promotions</a></li>
+            <li class="search-filter__offer-item"><a href="#" class="search__link--yellow search-filter__offer-link" data-target="resources">Other resources</a></li>
+            <li class="search-filter__offer-item"><a href="#" class="search__link--yellow search-filter__offer-link" data-target="suppliers">Suppliers, consultants and contacts</a></li>
           </ul>
           <!--search tags-->
         </div>
 
         <!--featured faqs-->
-        <div class="featured__block featured-faqs__block">
-          <h2>Featured FAQs</h2>
-          <div class="featured__list faqs__list faqs__list--featured">
+        <div class="featured__block">
+          <h2>Featured offers</h2>
+          <div class="featured__list faqs__list">
             <div class="featured__list-item">
               <div class="content-card">
                 <h3>Title lorem ipsum</h3>
-                <span class="content-card__label">M</span>
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">Find out more
@@ -174,7 +160,6 @@
             <div class="featured__list-item">
               <div class="content-card">
                 <h3>Title lorem ipsum</h3>
-                <span class="content-card__label">M</span>
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">Find out more
@@ -185,7 +170,6 @@
             <div class="featured__list-item">
               <div class="content-card">
                 <h3>Title lorem ipsum</h3>
-                <span class="content-card__label">M</span>
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">Find out more
@@ -200,13 +184,12 @@
     </section>
 
     <!--faqs section-->
-    <section class="content-cards__section faqs-section">
+    <section class="content-cards__section membership-offers__section">
       <div class="container">
         <div class="content-cards__list">
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="offers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -214,10 +197,9 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="resources">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -225,44 +207,9 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="suppliers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
-              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
-                Osametur milliquias.</p>
-              <a href="#" class="link-more">Find out more
-                <img src="img/arrow-right.svg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="content-cards__list-item">
-            <div class="content-card">
-              <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
-              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
-                Osametur milliquias.</p>
-              <a href="#" class="link-more">Find out more
-                <img src="img/arrow-right.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="content-cards__list-item">
-            <div class="content-card">
-              <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
-              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
-                Osametur milliquias.</p>
-              <a href="#" class="link-more">Find out more
-                <img src="img/arrow-right.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="content-cards__list-item">
-            <div class="content-card">
-              <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -271,10 +218,9 @@
             </div>
           </div>
 
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="resources">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -282,10 +228,9 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="suppliers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -293,10 +238,9 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item">
+          <div class="content-cards__list-item membership-offers__item" data-filter="offers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -305,10 +249,9 @@
             </div>
           </div>
 
-          <div class="content-cards__list-item is-hidden">
+          <div class="content-cards__list-item membership-offers__item" data-filter="suppliers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -316,10 +259,9 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item is-hidden">
+          <div class="content-cards__list-item membership-offers__item" data-filter="offers">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -327,10 +269,71 @@
               </a>
             </div>
           </div>
-          <div class="content-cards__list-item is-hidden">
+          <div class="content-cards__list-item membership-offers__item" data-filter="resources">
             <div class="content-card">
               <h3>Title lorem ipsum</h3>
-              <span class="content-card__label">M</span>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="suppliers">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="resources">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="offers">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="suppliers">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="resources">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
+              <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
+                Osametur milliquias.</p>
+              <a href="#" class="link-more">Find out more
+                <img src="img/arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="content-cards__list-item membership-offers__item is-hidden" data-filter="suppliers">
+            <div class="content-card">
+              <h3>Title lorem ipsum</h3>
               <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                 Osametur milliquias.</p>
               <a href="#" class="link-more">Find out more
@@ -342,7 +345,7 @@
           <div class="content-cards__list-item content-cards__list-link">
             <a href="#" class="link link--dark link--xs content-cards__load-link">Load more</a>
           </div>
-        </div> <!--faqs-list-->
+        </div> <!--content cards list-->
       </div> <!--container-->
     </section>
     <!--faqs section-->
