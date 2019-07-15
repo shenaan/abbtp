@@ -78,13 +78,13 @@
   color: #fff;
 
   @include on-event(){
-    color: $dark-color;
+    color: $text-color;
   }
 }
 
 .search-block__btn--yellow {
   background-color: $yellow-color;
-  color: $dark-color;
+  color: $text-color;
 
   @include on-event(){
     color: #fff;
@@ -93,7 +93,7 @@
 
 .search__link--yellow{
   background-color: $yellow-color;
-  color: $dark-color;
+  color: $text-color;
   @include transition();
   @include on-event(){
     color: #fff;

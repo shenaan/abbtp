@@ -1,101 +1,103 @@
 /*--- EVENT ITEM ---*/
-.events__item{
-	background: $white-color;
-	color: $dark-color;
+.events__item {
+  background: $white-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1.7rem;
+  margin-bottom: 28px;
+  @include respond-to(md) {
+    max-width: 32.33%;
+    flex: 0 0 32.33%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  &--title {
+    padding: 15.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to(md) {
+      padding: 0.5 * $gap 0;
+    }
+  }
+  .title-img {
+    max-width: 41px;
+    margin-right: 17px;
+  }
+  &__img {
+    object-fit: cover;
+    max-height: 175px;
+    @include respond-to(md) {
+      max-height: 233px;
+    }
+  }
+  h4 {
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin-bottom: 7px;
+  }
+  .link--dark {
+    font-size: 1rem;
+    padding: 10px 0;
+    margin-top: 31px;
+  }
+  a {
+    color: $text-color;
+  }
+  &__content__wrap {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem 1.7rem;
-    margin-bottom: 28px;
-    @include respond-to(md){
-	    max-width: 32.33%;
-	    flex: 0 0 32.33%;
-	    padding: 0;
-	    justify-content: flex-start;	
+    @include respond-to(md) {
+      padding: 0.5 * $gap 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
-
-	&--title{
-	    padding: 15.5px 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		@include respond-to(md){
-			padding: 0.5 * $gap 0;
-		}
-	}
-	.title-img{
-		max-width: 41px;
-		margin-right: 17px;
-	}
-	&__img{
-        object-fit: cover;
-	    max-height: 175px;
-	    @include respond-to(md){
-		    max-height: 233px;
-	    }
-	}
-	h4{
-        font-weight: bold;
-	    letter-spacing: 0px;
-	    margin-bottom: 5px;
-	}
-	.link--dark{
-		font-size: 1rem;
-	    margin-top: 31px;
-	}
-	a{
-		color: $dark-color;
-	}
-	&__content__wrap{
-	    display: flex;
-	    flex-direction: column;
-	    @include respond-to(md){
-	    	padding: 0.5 * $gap 14px;
-	    	display: flex;
-	    	flex-direction: column;
-	    	justify-content: space-between;
-    	    height: 100%;
-	    }
-	}
-	&__content{
-		padding-top: 11px;
-		@include respond-to(md){
-			padding-top: 0;
-		}
-		.date, .location{
-    	    display: block;
-		    font-weight: 500;
-	    }
-	    p{
-	    	margin-top: 12px;
-    	    margin-bottom: 5px;
-		    letter-spacing: -0.2px;
-		    line-height: 1.45rem;
-	    }
-	    &--border{
-    	    border-top: 0.5px solid $dark-color;
-	        margin-top: 7px;
-		    padding-top: 16px;
-		    padding-bottom: 16px;
-		    span{
-	    	    margin: 8px 0;
-		    }
-		    &:nth-last-child(2){
-		    	padding-bottom: 0;
-		    }
-	    }
-	}
-
-	&--text-item{
-		@include respond-to(md){
-	    	.events__item__content__wrap{
-    		    padding: 0 15px 0.5 * $gap;
-	    	}
-	    	.link--dark{
-    		    margin-top: 45px;
-	    	}
-		}
+  }
+  &__content {
+    padding-top: 11px;
+    @include respond-to(md) {
+      padding-top: 0;
     }
-	
+    .date, .location {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-top: 12px;
+      margin-bottom: 5px;
+      letter-spacing: -0.2px;
+      line-height: 1.45rem;
+    }
+    &--border {
+      border-top: 0.5px solid $dark-color;
+      margin-top: 7px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      span {
+        margin: 8px 0;
+      }
+      &:nth-last-child(2) {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &--text-item {
+    @include respond-to(md) {
+      .events__item__content__wrap {
+        padding: 0 15px 0.5 * $gap;
+      }
+      .link--dark {
+        margin-top: 45px;
+      }
+    }
+  }
 
 }
+
 /*--- /EVENT ITEM ---*/

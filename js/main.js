@@ -9,7 +9,8 @@ $(document).ready(function () {
   }
 
 // Page Header
-  $('.page-header__hamburger').on('click', () => {
+  $('.page-header__hamburger').on('click', (e) => {
+    e.stopPropagation();
     let header = $('.page-header');
     header.toggleClass('is-opened');
 
@@ -29,6 +30,15 @@ $(document).ready(function () {
     $(this).siblings('.sub-menu').toggleClass('opened');
     e.preventDefault();
     return false;
+  });
+
+  $(document).on('click', function (e) {
+    if (!e) e = window.event;  //for mozilla
+    if ($('.page-header').hasClass('is-opened')) {
+      if (!$(e.target).closest('.page-header__nav-block').length) {
+        $('.page-header.is-opened').removeClass('is-opened');
+      }
+    }
   });
 // /Page Header
 
@@ -138,5 +148,13 @@ $(document).ready(function () {
       itemHidden.slice(0,4).fadeIn().removeClass('is-hidden');
     }
   });
+
+  //General accordion page
+  $('.accordion-item__head-btn').on('click', function () {
+    let $this = $(this);
+    $this.find('span').toggleClass('is-hidden');
+    $this.parents('.accordion-item').toggleClass('is-closed');
+    $this.parents('.accordion-item').find('.accordion-item__content--hidden').toggleClass('is-visible');
+  })
 
 });

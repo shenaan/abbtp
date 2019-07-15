@@ -7,53 +7,62 @@
 @import 'vendor/normalize';
 
 // 3. Base stuff
-@import 'base/base',
-'base/fonts',
-'base/typography',
-'base/helpers';
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/animation';
+@import 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/header',
-'layout/footer',
-'layout/hero',
-'layout/intro',
-'layout/conference',
-'layout/events',
-'layout/tweets',
-'layout/search-block',
-'layout/centers',
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/hero';
+@import 'layout/intro';
+@import 'layout/conference';
+@import 'layout/events';
+@import 'layout/tweets';
+@import 'layout/search-block';
+@import 'layout/centers';
 
-'layout/hero-inner-pages',
-'layout/intro-inner-page',
-'layout/inner-page-content-section',
-'layout/inner-page-suggestions',
-'layout/search-block-white',
-'layout/members-section',
-'layout/ad-block-section',
-'layout/features-faqs-block',
-'layout/content-cards-section';
+@import 'layout/hero-inner-pages';
+@import 'layout/intro-inner-page';
+@import 'layout/inner-page-content-section';
+@import 'layout/inner-page-suggestions';
+@import 'layout/search-block-white';
+@import 'layout/members-section';
+@import 'layout/ad-block-section';
+@import 'layout/features-faqs-block';
+@import 'layout/content-cards-section';
+@import 'layout/general-section-page-content';
+@import 'layout/accordion-heading-section';
+@import 'layout/accordion-content-section';
+
 
 // 5. Components
-@import 'components/buttons',
-'components/search',
-'components/blockquote',
-'components/event-item',
-'components/tweet',
+@import 'components/buttons';
+@import 'components/search';
+@import 'components/blockquote';
+@import 'components/event-item';
+@import 'components/tweet';
 
-'components/inner-page-blockquote',
-'components/page-submenu',
-'components/carousel',
-'components/inner-page-media',
-'components/citation',
-'components/content-card',
-'components/content-card-list',
-'components/content-card-download',
-'components/content-card-donate',
-'components/ad-cards',
-'components/suggestions-carousel',
-'components/search-letters',
-'components/search-tags',
-'components/search-filter-offers',
-'components/featured-block';
+@import 'components/img-inner';
+@import 'components/img-overlay';
+@import 'components/inner-page-blockquote';
+@import 'components/page-submenu';
+@import 'components/carousel';
+@import 'components/inner-page-media';
+@import 'components/citation';
+@import 'components/content-card';
+@import 'components/content-card-list';
+@import 'components/content-card-download';
+@import 'components/content-card-donate';
+@import 'components/ad-cards';
+@import 'components/suggestions-carousel';
+@import 'components/search-letters';
+@import 'components/search-tags';
+@import 'components/search-filter-offers';
+@import 'components/featured-block';
+@import 'components/general-section-content-cards';
+@import 'components/accordion-general';
 
 

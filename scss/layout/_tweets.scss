@@ -11,7 +11,7 @@
    	}
    	&__wrap{
    		margin-top: $gap;
-   		margin-bottom: 52px;
+   		margin-bottom: 15px;
    		position: relative;
    		@include respond-to(md){
 	        padding: 0 35px;
@@ -23,9 +23,10 @@
    	}
     .owl-carousel .owl-nav{
 	    position: absolute;
-	    top: 0;
+	    top: 50%;
 	    left: -20px;
 	    right: -20px;
+      transform: translateY(-50%);
 	    display: flex;
 	    justify-content: space-between;
 	    align-items: center;
@@ -69,5 +70,8 @@
 			}
 		}
 	}
+  .link{
+    padding: 10px 0;
+  }
 }
 /*--- /TWEETS ---*/

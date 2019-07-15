@@ -1,0 +1,12 @@
+.accordion-section__heading{
+  padding: 36px 0 $gap;
+
+  h2{
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(md){
+    padding: $gap 0 $gap * 1.5;
+  }
+}

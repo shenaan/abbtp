@@ -1,205 +1,233 @@
 /*--- HEADER ---*/
-.page-header{
-    position: absolute;
-    left: 0;
+.page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 0.5 * $gap;
+  @include transition;
+  @include respond-to(md) {
+    padding-top: $gap / 1.5;
+  }
+  &__logo {
+    display: block;
+    max-width: 180px;
+    @include respond-to(md) {
+      max-width: 100%;
+    }
+  }
+  &__btn {
+    &--desktop.btn {
+      display: none;
+      @include respond-to(md) {
+        display: block;
+        z-index: 100;
+      }
+    }
+    &--mobile.btn {
+      max-width: 200px;
+      @include respond-to(md) {
+        display: none;
+      }
+    }
+  }
+  &__nav-block {
+    position: fixed;
+    top: 0;
     right: 0;
-    z-index: 100;
-    padding-top: 0.5 * $gap;
+    bottom: 0;
+    height: 100vh;
+    transform: translateX(100%);
     @include transition;
-    @include respond-to(md){
-        padding-top: $gap / 1.5;  
-    }
-    &__logo{
-	    display: block;
-    	max-width: 180px;
-        @include respond-to(md){
-            max-width: 100%;
-        }
-    }
-    &__btn{
-    	&--desktop.btn{
-    		display: none;
-            @include respond-to(md){
-                display: block;
-                z-index: 100;
-            }
-    	}
-        &--mobile.btn{
-            @include respond-to(md){
-                display: none;
-            }
-        }
-    }
-    &__nav-block{
-    	position: fixed;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-    	transform: translateX(100%);
-    	@include transition;
-    	background: $dark-color;
-        padding: 23px 21px;
-        overflow: auto;
-        left: 0;
-    	@include when-inside('.page-header.is-opened'){
-    		transform: translate(0);
-    	}
-    	@include respond-to(md){
-            max-height: 938px;
-            transform: translateX(418px);
-            left: auto;
-            background: #282827;
-            max-width: 357px;
-            padding: 0px 35px 0 43px;
-        }
+    background: $dark-color;
+    padding: 23px 21px;
+    overflow: auto;
+    left: 0;
 
+    display: flex;
+    flex-direction: column;
+
+    @include when-inside('.page-header.is-opened') {
+      transform: translate(0);
     }
-    &__nav{
-        margin-top: 2.5rem;
-        font-size: 1.3rem;
-        font-weight: 700;
-        @include respond-to(md){
-            margin-top: 3.5rem;
-            padding-top: 1.5 * $gap;
-            margin-bottom: 1.5 * $gap;
-        }
-        li>a{
-            &:after{
-                content: "";
-                background-image: url(../img/arrow-down.png);
-                width: 35px;
-                height: 19px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                transform: rotate(0deg);
-                @include transition;
-                @include respond-to(md){
-                    display: none;
-                }
-            }
-            &.open-sub-menu{
-                &:after{
-                    transform: rotate(180deg);
-                    @include transition;
-                }
-            }
-        }
-        a{
-            color: $white-color;
-            padding: 13px 0;
-            border-bottom: 1px solid $light-color;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @include respond-to(md){
-                border-bottom: none;
-                padding: 0;
-                margin-bottom: 0.5 * $gap;
-            }
-            &:hover{
-                color: $yellow-color;
-            }
-        }
+    @include respond-to(md) {
+      //max-height: 938px;
+      transform: translateX(418px);
+      left: auto;
+      background: #282827;
+      max-width: 357px;
+      padding: 0px 35px 0 43px;
     }
-    &__hamburger{
-	    position: absolute;
-	    right: 20px;
-	    top: 20px;
-	    width: 32px;
-	    height: 25px;
-	    border: none;
-	    outline: none;
-	    background: transparent;
-	    cursor: pointer;
-	    z-index: 50;
-	    @include transition;
-		span{
-		    width: 32px;
-		    height: 2px;
-		    background-color: $white-color;
-		    display: block;
-	        margin-bottom: 10px;
-            transition-duration: 75ms;
-            transform: rotate(0);
-	        @include transition;
-    	}
-      	@include when-inside('.page-header.is-opened'){
-      		right: 37px;
-    		top: 26px;
-      		span{
-	        	position: absolute;
-			    width: 55px;
-			    height: 2px;
-      			&:first-child{
-					transition-delay: .12s;
-					transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-					transform: rotate(45deg);
-				}
-				&:last-child{
-					transition: bottom 75ms cubic-bezier(.215, .61, .355, 1) 12s;
-					transform: rotate(-45deg);
-				}
-				&:nth-child(2){
-					display: none;
-				}
-      		}
-      	}
-        @include respond-to(md){
-            height: 33px;
-            position: relative;
-            top: 0;
-            right: 0;
-            margin-left: 33px;
-            margin-top: 3px;
-            width: 43px;
-            @include when-inside('.page-header.is-opened'){
-                top: 0;
-                right: 0;
-            }
-            span{
-                width: 45px;
-                margin-bottom: 15px;
-            }
+
+  }
+  &__nav {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5 * $gap;
+    font-size: 1.3rem;
+    font-weight: 700;
+    @include respond-to(md) {
+      margin-top: 3.5rem;
+      padding-top: 1.5 * $gap;
+      margin-bottom: 1.5 * $gap;
+    }
+    li {
+      &:last-of-type {
+        a {
+          margin-bottom: 0;
         }
+      }
     }
-    .container{
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
+    li > a {
+      &:after {
+        content: "";
+        background-image: url(../img/arrow-down.png);
+        width: 35px;
+        height: 19px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        @include transition;
+        @include respond-to(md) {
+          display: none;
+        }
+      }
+      &.open-sub-menu {
+        &:after {
+          transform: rotate(180deg);
+          @include transition;
+        }
+      }
     }
-    &__right-nav{
+    a {
+      color: $white-color;
+      padding: 13px 0;
+      border-bottom: 1px solid $light-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include respond-to(md) {
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 0.5 * $gap;
+      }
+      &:hover {
+        color: $yellow-color;
+      }
+    }
+  }
+  &__hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 50;
+    @include transition;
+    span {
+      width: 32px;
+      height: 2px;
+      background-color: $white-color;
+      display: block;
+      margin-bottom: 10px;
+      transition-duration: 75ms;
+      transform: rotate(0);
+      @include transition;
+    }
+    @include when-inside('.page-header.is-opened') {
+      right: 37px;
+      top: 26px;
+      span {
         position: absolute;
-	    right: 0px;
-	    top: 2px;
-        @include respond-to(md){
-            right: 39px;
-            top: 27px;
-            display: flex;
+        width: 55px;
+        height: 2px;
+        &:first-child {
+          transition-delay: .12s;
+          transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+          transform: rotate(45deg);
         }
-    }
-    .sub-menu{
-    	max-height: 0;
-    	@include transition;
-    	overflow: hidden;
-    	&.opened{
-    		max-height: 500px;
-    		@include transition;
-    	}
-        a{
-           padding: 13px 32px 13px 42px;
-           &:after{
-                display: none;
-           }
+        &:last-child {
+          transition: bottom 75ms cubic-bezier(.215, .61, .355, 1) 12s;
+          transform: rotate(-45deg);
         }
-    }
-    &__buttons{
-        text-align: center;
-        margin-top: 4.65rem;
-        @include respond-to(md){
-            padding-top: $gap;
+        &:nth-child(2) {
+          display: none;
         }
+      }
     }
-   
+    @include respond-to(md) {
+      height: 33px;
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-left: 33px;
+      margin-top: 3px;
+      width: 43px;
+      @include when-inside('.page-header.is-opened') {
+        top: 0;
+        right: 0;
+      }
+      span {
+        width: 45px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__right-nav {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    @include respond-to(md) {
+      right: 39px;
+      top: 27px;
+      display: flex;
+    }
+  }
+  .sub-menu {
+    max-height: 0;
+    @include transition;
+    overflow: hidden;
+    &.opened {
+      max-height: 500px;
+      @include transition;
+    }
+    a {
+      padding: 13px 32px 13px 42px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__buttons {
+    text-align: center;
+    //margin-top: 4.65rem;
+    margin-top: auto;
+    padding-top: $gap;
+    margin-bottom: $gap * 0.5;
+    a {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    @include respond-to(md) {
+      padding-top: 40px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .search {
+    margin-top: 0;
+    margin-bottom: 2 * $gap;
+  }
 
 }
+
 /*--- /HEADER ---*/

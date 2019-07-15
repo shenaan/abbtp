@@ -1,0 +1,141 @@
+.accordion-item {
+  background-color: #fff;
+  padding: $gap * 0.5 15px;
+  margin-bottom: 30px;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  &.is-closed{
+    .accordion-item__content{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @include respond-to(md) {
+    padding: $gap * 0.5 20px;
+  }
+}
+
+.accordion-item__head {
+  display: flex;
+  border-bottom: 1px solid #939292;
+  padding-bottom: $gap * 0.5;
+  h2 {
+    line-height: 1;
+  }
+}
+
+.accordion-item__head-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  line-height: 0;
+  cursor: pointer;
+  outline: none;
+
+  span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $yellow-color;
+    @include transition();
+    &.is-hidden {
+      display: none;
+    }
+    &.plus {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 25px;
+        width: 2px;
+        background-color: $yellow-color;
+      }
+    }
+  }
+}
+
+.accordion-item__body {
+  padding-top: 13px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+
+  @include respond-to(md){
+    flex-wrap: nowrap;
+  }
+}
+
+.accordion-item__content {
+  width: 100%;
+  max-width: 100%;
+  order: 1;
+  .link{
+    color: $dark-color;
+  }
+  @include respond-to(md){
+    padding-right: 28px;
+    order: 0;
+    width: 60%;
+    max-width: 60%;
+  }
+}
+
+.accordion-item__content--hidden {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transform: scale(1,0);
+  position: absolute;
+  transition: 0.3s opacity ease-in-out;
+
+  &.is-visible{
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    z-index: 0;
+    transform: scale(1,1);
+  }
+}
+
+.accordion-item__link{
+  &:first-of-type{
+    margin-top: 10px;
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.accordion-item__btn-more {
+  margin-top: 27px;
+}
+
+.accordion-item__img {
+  width: 100%;
+  max-width: 100%;
+  order: 0;
+  margin-bottom: 30px;
+  img{
+    width: 100%;
+  }
+  @include respond-to(md){
+    order: 1;
+    right: 0;
+    top: 0;
+    width: 40%;
+    max-width: 40%;
+    padding-top: 9px;
+    margin-bottom: 0;
+  }
+}

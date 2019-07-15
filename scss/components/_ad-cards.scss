@@ -21,7 +21,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    max-height: 300px;
+    max-height: 190px;
+  }
+  @include respond-to(sm){
+    img{
+      max-height: 300px;
+    }
   }
   @include respond-to(md) {
     padding-right: 30px;
@@ -80,9 +85,6 @@
   @include respond-to(md) {
     h2 {
       margin-bottom: 17px;
-    }
-    .ad__card-link {
-      margin-top: 30px;
     }
   }
 }

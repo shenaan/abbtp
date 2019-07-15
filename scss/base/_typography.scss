@@ -60,13 +60,13 @@ p {
   }
   &:hover {
     &:after {
-      width: 30px;
+      animation: hover-state 0.8s 1;
     }
   }
   @include respond-to(md) {
     font-size: 1.7rem;
     max-width: 40%;
-    padding: 10px 0;
+    padding: 3px 0;
   }
   &--dark {
     color: $dark-color;
@@ -77,13 +77,14 @@ p {
   &--small {
     font-size: 1rem;
     display: inline-block;
+    padding: 5px 0 10px;
     @include respond-to(md) {
       font-size: 1.1rem;
     }
   }
   &--xs {
     font-size: 1rem;
-    line-height: 1.5rem;
+    //line-height: 1.5rem;
     padding: 5px 0;
     display: inline-block;
   }
@@ -99,10 +100,14 @@ p {
   letter-spacing: 0;
   font-weight: bold;
   line-height: 18px;
-  img {
+  &:after{
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 2px;
     width: 10px !important;
     height: 15px;
-    margin-left: 3px;
+    background: url(../img/arrow-right.svg)no-repeat center/contain;
     @include transition;
   }
   &.is-inactive {
@@ -110,8 +115,8 @@ p {
     pointer-events: none;
   }
   &:hover {
-    img {
-      transform: translateX(45px);
+    &:after{
+      transform: translateX(20px);
       margin-left: 0;
     }
   }
@@ -140,8 +145,8 @@ p {
     line-height: 1.66rem; //30px
   }
   h4 {
-    font-size: 1rem;
-    line-height: 1.66rem;
+    font-size: 1rem; //18px
+    line-height: 1.66rem; //30px
   }
   p {
     margin-bottom: $gap*0.5;

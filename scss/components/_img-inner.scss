@@ -1,0 +1,23 @@
+/*fixed height wrapper for images*/
+
+.img__inner{
+  //height: 190px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-color;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @include respond-to(sm){
+    //height: 300px;
+  }
+  @include respond-to(md){
+    //height: auto;
+  }
+}

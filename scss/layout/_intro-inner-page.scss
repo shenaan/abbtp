@@ -6,13 +6,15 @@
       font-size: 1.1rem;
       line-height: 1.6rem;
     }
-    @include respond-to(md) {
-      padding-top: $gap;
+  }
+  @include respond-to(md) {
+    padding-top: $gap;
 
-      .lead__content {
-        padding-bottom: $gap;
-      }
+    .lead__content {
+      padding-bottom: $gap;
     }
   }
 }
+
+
 

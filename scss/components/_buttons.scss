@@ -16,7 +16,7 @@
 	    color: $white-color;
 	    &:hover{
 	    	background: $white-color;
-	    	color: $dark-color;
+	    	color: $text-color;
 	    }
 	    &--bold{
 	    	font-weight: 700;
@@ -50,7 +50,7 @@
 		}
 	}
 	&--white{
-		color: $dark-color;
+		color: $text-color;
 		font-weight: bold;
     	padding: 9px 24px;
 		font-size: 1.1rem;

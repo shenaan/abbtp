@@ -5,7 +5,7 @@
 	margin-top: 20px;
     margin-bottom: 36px;
     display: none;
-    color: $dark-color;
+    color: $text-color;
     &:first-child{
     	display: block;
     }
@@ -81,7 +81,7 @@
 		    text-align: left;
 		    margin-top: 0;
 		}
-        
+
 	}
 }
 /*--- /TWEET ---*/

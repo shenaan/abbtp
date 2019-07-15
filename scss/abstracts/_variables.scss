@@ -8,7 +8,7 @@ $text-font-stack: 'BentonSans', sans-serif !default;
 
 /// Copy text color
 /// @type Color
-$text-color: rgba(0, 0, 0, 0.95) !default;
+$text-color: #2E2D2C !default;
 
 /// Copy text color
 /// @type Color
@@ -24,7 +24,7 @@ $yellow-color: #ffcc00;
 
 /// Copy text color
 /// @type Color
-$yellow-gradient: linear-gradient(to right, #f3e600, #ffcc00);
+$yellow-gradient: linear-gradient(to bottom, #f3e600, #ffcc00);
 
 /// Copy text color
 /// @type Color
@@ -32,6 +32,9 @@ $light-color: #f2f2f2;
 
 //spacing gap
 $gap: 45px;
+
+//mobile padding left
+$gap-mob: 15px;
 
 /// Container's maximum width
 /// @type Length

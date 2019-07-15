@@ -1,13 +1,16 @@
 /*--- CONFERENCE ---*/
 .conference{
 	text-align: center;
+  &__picture{
+
+  }
 	&__img{
 	    position: absolute;
 	    top: 0;
 	    width: 100%;
 	    object-fit: cover;
 	    object-position: top;
-	    min-height: 568px;	
+	    min-height: 568px;
 	    @include respond-to(md){
 	    	max-height: 502px;
 	    }

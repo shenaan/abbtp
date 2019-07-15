@@ -1,0 +1,30 @@
+.general-section__main-content {
+  padding: $gap 0 60px;
+  @include respond-to(md) {
+    padding: $gap 0 $gap * 1.5;
+  }
+}
+
+.general-section__content-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .inner-page__content-block {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include respond-to(md) {
+    margin: 0 -11px;
+    .inner-page__content-block {
+      width: 50%;
+      max-width: 50%;
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+    .inner-page__content-block--fullwidth {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

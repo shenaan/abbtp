@@ -1,4 +1,8 @@
 .ad-block__section {
   background: $yellow-gradient;
   padding: $gap 0 $gap * 1.5;
+
+  @include respond-to(md){
+    padding: $gap * 1.5 0;
+  }
 }
