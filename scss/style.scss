@@ -36,7 +36,9 @@
 @import 'layout/general-section-page-content';
 @import 'layout/accordion-heading-section';
 @import 'layout/accordion-content-section';
-
+@import 'layout/news-detail-section';
+@import 'layout/related-topics-section';
+@import 'layout/event-details';
 
 // 5. Components
 @import 'components/buttons';
@@ -64,5 +66,8 @@
 @import 'components/featured-block';
 @import 'components/general-section-content-cards';
 @import 'components/accordion-general';
+@import 'components/share-link';
+@import 'components/lead-title';
+@import 'components/inner-page-list';
 
 

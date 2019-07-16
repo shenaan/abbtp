@@ -1,0 +1,7 @@
+.news-detail__section{
+  padding-top: 26px;
+  padding-bottom: $gap * 1.5;
+  @include respond-to(md){
+    padding: $gap 0 $gap * 2;
+  }
+}

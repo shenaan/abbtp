@@ -1,0 +1,29 @@
+.inner-page__list{
+  margin-top: $gap * 0.5;
+}
+
+.inner-page__list-item{
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 27px;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background-color: $text-color;
+    @include square(4px);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}

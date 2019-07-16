@@ -1,0 +1,30 @@
+.lead__title {
+  padding-bottom: 28px;
+  margin-bottom: $gap * 0.5;
+  border-bottom: 1px solid #0d0d0d;
+  h2 {
+    font-size: 1.3rem; //24px
+    line-height: 1.8rem; //34px
+    margin-bottom: 5px;
+  }
+  p {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include respond-to(sm) {
+    p{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.lead__title-link {
+  margin-top: 5px;
+  @include respond-to(sm) {
+    margin-left: auto;
+    padding-left: 15px;
+  }
+}

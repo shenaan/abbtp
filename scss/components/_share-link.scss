@@ -1,0 +1,11 @@
+.share-link{
+  display: inline-block;
+  color: $text-color;
+  font-weight: 500;
+  i {
+    color: $yellow-color;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}

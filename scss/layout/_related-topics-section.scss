@@ -1,0 +1,46 @@
+.related-topics {
+  padding-top: $gap * 0.5;
+  padding-bottom: 27px; //45 - 18
+  background-color: #fff;
+  h2 {
+    font-size: 1.3rem; //24px
+    line-height: 1.8rem; //34px
+    margin-bottom: 13px;
+  }
+}
+
+.related-topics__tags {
+  border-top: 1px solid #2e2d2c;
+  padding-top: 34px;
+  margin: 0;
+}
+
+.related-topics__tags-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -9px;
+}
+
+.related-topics__tags-item {
+  padding: 0 9px;
+  height: $gap;
+  min-width: 157px;
+  margin-bottom: 18px;
+}
+
+.related-topics__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.1rem;
+  padding: 2px;
+  color: $text-color;
+  background-color: $yellow-color;
+  @include transition;
+
+  @include on-event() {
+    color: #fff;
+  }
+}

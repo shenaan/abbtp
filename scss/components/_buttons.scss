@@ -59,5 +59,17 @@
 			color: $yellow-color;
 		}
 	}
+  &--lg{
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    min-width: 180px;
+
+    @include respond-to(md){
+      font-size: 1.1rem;
+      min-width: 190px;
+    }
+  }
 }
 /*--- /BUTTONS ---*/

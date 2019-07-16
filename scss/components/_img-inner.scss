@@ -1,7 +1,7 @@
 /*fixed height wrapper for images*/
 
 .img__inner{
-  //height: 190px;
+  height: 190px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -15,9 +15,9 @@
   }
 
   @include respond-to(sm){
-    //height: 300px;
+    height: 300px;
   }
   @include respond-to(md){
-    //height: auto;
+    height: auto;
   }
 }
