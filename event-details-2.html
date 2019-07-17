@@ -133,6 +133,10 @@
               <div class="event-details__img">
                 <img src="img/events-detail-page/theatre-02.png" alt="">
               </div>
+              <div class="map map--sm event-details__map" id="event-details__map--sm"></div>
+              <a
+                href="https://www.google.com/maps/place/Association+Of+British+Theatre+Technicians/@51.520561,-0.1070799,18z/data=!4m5!3m4!1s0x48761b4e07a0cecb:0x5868cd7398813cae!8m2!3d51.520511!4d-0.106066"
+                class="link link--xs" target="_blank">View large map</a>
             </div>
             <div class="event-details__btn">
               <a href="#" class="btn btn--dark btn--lg">Book tickets</a>
@@ -155,11 +159,27 @@
               sed placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex
               enim.</p>
           </div>
+          <!--h2 content block-->
+          <div class="inner-page__content-block">
+            <h2>Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
+              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
+              et tortor sodales, lacinia commodo justo. Praesent nec luctus metus. Duis massa augue, vestibulum sed
+              placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex enim.</p>
+
+            <ul class="inner-page__list padding-bottom--gap">
+              <li class="inner-page__list-item">Bullet list item</li>
+              <li class="inner-page__list-item">Bullet list item</li>
+              <li class="inner-page__list-item">Bullet list item</li>
+              <li class="inner-page__list-item">Bullet list item</li>
+            </ul>
+          </div>
+          <!--h2 content block-->
         </div>
       </div>
 
       <!--media carousel-->
-      <div class="media-carousel owl-carousel owl-theme owl-carousel--fullwidth event-details__media-carousel">
+      <div class="media-carousel owl-carousel owl-theme owl-carousel--fullwidth owl-carousel--yellow event-details__media-carousel">
         <div class="media-carousel__item">
           <div class="inner-page__media inner-page__media--fullwidth"
                style="background-image: url('img/intro-general.jpg')">
@@ -200,30 +220,6 @@
       </div>
     </section>
     <!--intro inner page-->
-
-    <!--map section-->
-    <section class="map-section">
-      <div id="event-details__map" class="map map--lg"></div>
-      <div class="map-details">
-        <div class="container">
-          <div class="map-details__inner">
-            <div class="map-details__title">
-              <h2>Location</h2>
-            </div>
-            <h4>Association of <br>
-              British Theatre Technicians
-            </h4>
-            <p>4th Floor</p>
-            <p>55 Farringdon Road</p>
-            <p>London EC1M 3JB</p>
-            <a
-              href="https://www.google.com/maps/place/Association+Of+British+Theatre+Technicians/@51.520561,-0.1070799,18z/data=!4m5!3m4!1s0x48761b4e07a0cecb:0x5868cd7398813cae!8m2!3d51.520511!4d-0.106066"
-              class="link link--xs" target="_blank">View larger map</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--map section-->
 
     <!--inner page content section-->
     <section class="inner-page__content-section event-details__section">
@@ -433,20 +429,21 @@
 <script>
 
   function initialize() {
-    var latlng = new google.maps.LatLng(51.520561, -0.1070799,18);
+    var latlng = new google.maps.LatLng(51.520561, -0.1070799, 18);
     var myOptions = {
-      zoom: 16,
+      zoom: 12,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true
     };
-    var map = new google.maps.Map(document.getElementById("event-details__map"),
+    var map = new google.maps.Map(document.getElementById("event-details__map--sm"),
       myOptions);
   }
 
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5zhEZUvthCJ7wmiUYfw4EWXXedD8jmIk&callback=initialize">
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5zhEZUvthCJ7wmiUYfw4EWXXedD8jmIk&callback=initialize">
 </script>
 
 
