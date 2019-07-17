@@ -2180,7 +2180,7 @@ section {
   padding-bottom: 45px;
   min-height: 303px; }
   .hero--inner-page .hero__text-wrap {
-    min-height: auto !important;
+    min-height: 10px !important;
     height: auto;
     padding: 190px 0 90px 0;
     color: #fff; }
