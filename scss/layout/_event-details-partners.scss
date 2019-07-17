@@ -1,0 +1,19 @@
+
+.event-detail__partners-block {
+  background-color: #fff;
+  padding: $gap * 0.5 15px;
+
+  h2 {
+    font-size: 1.55rem; //28px
+    line-height: 2.11rem; //38px
+  }
+}
+
+.event-details__members {
+  .members-list__item {
+    margin-bottom: 22px;
+  }
+  .members-list__logo {
+    margin-bottom: 0;
+  }
+}

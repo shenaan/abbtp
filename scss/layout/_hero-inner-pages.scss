@@ -1,6 +1,7 @@
 .hero--inner-page {
   position: relative;
   padding-bottom: $gap;
+  min-height: 303px;
 
   .hero__text-wrap {
     min-height: auto;

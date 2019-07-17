@@ -125,3 +125,12 @@
     @content;
   }
 }
+
+/*Flex*/
+@mixin flex-order($prop) {
+  -webkit-box-ordinal-group: $prop;
+  -moz-box-ordinal-group: $prop;
+  -ms-flex-order: $prop;
+  -webkit-order: $prop;
+  order: $prop;
+}

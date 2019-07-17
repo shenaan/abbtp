@@ -60,6 +60,7 @@ $(document).ready(function () {
     }
   });
 
+  //'you may be interested in' carousel
   $('.suggestions-carousel').owlCarousel({
     loop: false,
     margin: 0,
@@ -82,6 +83,17 @@ $(document).ready(function () {
         nav: false
       }
     }
+  });
+
+  //media carousel
+
+  $('.media-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    dots: false,
+    items: 1,
+    autoHeight: false,
+    nav: true
   });
 // /Owl Carousel
 
@@ -145,16 +157,24 @@ $(document).ready(function () {
     if(itemHidden.length === 0) {
       $this.addClass('is-inactive');
     } else {
-      itemHidden.slice(0,4).fadeIn().removeClass('is-hidden');
+      itemHidden.slice(0,3).fadeIn().removeClass('is-hidden');
     }
   });
 
   //General accordion page
   $('.accordion-item__head-btn').on('click', function () {
     let $this = $(this);
-    $this.find('span').toggleClass('is-hidden');
-    $this.parents('.accordion-item').toggleClass('is-closed');
-    $this.parents('.accordion-item').find('.accordion-item__content--hidden').toggleClass('is-visible');
+    let parent = $this.parents('.accordion-item');
+    let siblings = parent.siblings('.accordion-item');
+    let icon = $this.find('span');
+
+    icon.toggleClass('is-hidden');
+    parent.toggleClass('is-closed');
+    parent.find('.accordion-item__content--hidden').toggleClass('is-visible');
+    siblings.addClass('is-closed');
+    siblings.find('.accordion-item__content--hidden').removeClass('is-visible');
+    siblings.find('.accordion-item__head-btn span.plus').removeClass('is-hidden');
+    siblings.find('.accordion-item__head-btn span.minus').addClass('is-hidden');
   })
 
 });

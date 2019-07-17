@@ -14,6 +14,7 @@
 @import 'base/helpers';
 
 // 4. Layout-related sections
+@import 'layout/grids';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/hero';
@@ -39,6 +40,9 @@
 @import 'layout/news-detail-section';
 @import 'layout/related-topics-section';
 @import 'layout/event-details';
+@import 'layout/map-section';
+@import 'layout/event-details-partners';
+@import 'layout/featured-events-card';
 
 // 5. Components
 @import 'components/buttons';
@@ -51,6 +55,7 @@
 @import 'components/img-overlay';
 @import 'components/inner-page-blockquote';
 @import 'components/page-submenu';
+@import 'components/heading-underline';
 @import 'components/carousel';
 @import 'components/inner-page-media';
 @import 'components/citation';
@@ -69,5 +74,8 @@
 @import 'components/share-link';
 @import 'components/lead-title';
 @import 'components/inner-page-list';
+@import 'components/media-carousel';
+@import 'components/map';
+
 
 

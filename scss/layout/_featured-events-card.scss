@@ -1,0 +1,21 @@
+.featured-events__card{
+
+}
+
+.featured-events__card-content{
+  p{
+    line-height: 1.22rem;
+  }
+  .suggestion__card-title{
+    position: relative;
+    padding-right: 35px;
+    p{
+      font-weight: 500;
+      margin-bottom:  5px;
+    }
+    .content-card__label{
+      right: 0;
+      top: 0;
+    }
+  }
+}

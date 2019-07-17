@@ -11,7 +11,7 @@
   />
   <meta name="format-detection" content="telephone=no"/>
   <link href="css/fontawesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/owl.carousel.css"/>
   <link rel="stylesheet" href="css/fontawesome.css"/>
   <link rel="stylesheet" href="css/all.css"/>
@@ -92,9 +92,7 @@
     <section class="hero--inner-page">
       <div class="container">
         <div class="hero__text-wrap">
-          <h1>
-            General page title
-          </h1>
+          <h1>&nbsp;</h1>
         </div>
       </div>
       <div class="page-submenu__outer">
@@ -125,7 +123,7 @@
               </div>
               <p class="event-details__price">Member’s price £xx</p>
               <p class="event-details__price--nonmember">Non-member’s price £xx</p>
-              <p class="event-details__date">9 July 2019 7.00pm</p>
+              <p class="event-details__date">9 July 2019| 7.00pm</p>
               <p class="event-details__place">London</p>
               <p>For more information and group bookings <br>
                 please contact <a href="mailto:email@ABTT.org.uk" class="link link--xs" target="_blank">email@ABTT.org.uk</a>
@@ -157,12 +155,36 @@
           </div>
         </div>
       </div>
-      <div class="inner-page__media inner-page__media--fullwidth"
-           style="background-image: url('img/intro-general.jpg')">
-        <div class="container">
-          <div class="inner-page__media-attribution">Attribution</div>
+
+      <!--media carousel-->
+      <div class="media-carousel owl-carousel owl-theme event-details__media-carousel">
+        <div class="media-carousel__item">
+          <div class="inner-page__media inner-page__media--fullwidth"
+               style="background-image: url('img/intro-general.jpg')">
+            <div class="container">
+              <div class="inner-page__media-attribution">Attribution</div>
+            </div>
+          </div>
+        </div>
+        <div class="media-carousel__item">
+          <div class="inner-page__media inner-page__media--fullwidth"
+               style="background-image: url('img/intro-general.jpg')">
+            <div class="container">
+              <div class="inner-page__media-attribution">Attribution</div>
+            </div>
+          </div>
+        </div>
+        <div class="media-carousel__item">
+          <div class="inner-page__media inner-page__media--fullwidth"
+               style="background-image: url('img/intro-general.jpg')">
+            <div class="container">
+              <div class="inner-page__media-attribution">Attribution</div>
+            </div>
+          </div>
         </div>
       </div>
+      <!--media carousel-->
+
       <div class="intro--inner-page__blockquote">
         <div class="container">
           <div class="container__inner--sm">
@@ -177,121 +199,115 @@
     </section>
     <!--intro inner page-->
 
+    <!--map section-->
+    <section class="map-section">
+      <div id="event-details__map" class="map map--lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2998103700866!2d-0.10707987647807826!3d51.52056104849331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4e07a0cecb%3A0x5868cd7398813cae!2sAssociation+Of+British+Theatre+Technicians!5e0!3m2!1sen!2sua!4v1563355499772!5m2!1sen!2sua"
+          width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="map-details">
+        <div class="container">
+          <div class="map-details__inner">
+            <div class="map-details__title">
+              <h2>Location</h2>
+            </div>
+            <h4>Association of <br>
+              British Theatre Technicians
+            </h4>
+            <p>4th Floor</p>
+            <p>55 Farringdon Road</p>
+            <p>London EC1M 3JB</p>
+            <a
+              href="https://www.google.com/maps/place/Association+Of+British+Theatre+Technicians/@51.520561,-0.1070799,18z/data=!4m5!3m4!1s0x48761b4e07a0cecb:0x5868cd7398813cae!8m2!3d51.520511!4d-0.106066"
+              class="link link--xs" target="_blank">View larger map</a>
+          </div>
+        </div>
+      </div>
+      <!--map section-->
+
+    </section>
+
     <!--inner page content section-->
-    <section class="inner-page__content-section news-detail__section">
+    <section class="inner-page__content-section event-details__section">
       <div class="container">
 
-        <!--h2 content block-->
+        <!--event details partners-->
         <div class="inner-page__content-block">
-          <div class="container__inner--sm">
-            <h2>Heading 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
-              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
-              et tortor sodales, lacinia commodo justo. Praesent nec luctus metus. Duis massa augue, vestibulum sed
-              placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex enim.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
-              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
-              et tortor sodales, lacinia commodo justo. Praesent nec luctus metus. Duis massa augue, vestibulum sed
-              placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex enim.</p>
+          <div class="event-detail__partners-block">
+            <div class="heading__underline">
+              <h2>Partners</h2>
+            </div>
+            <div class="members-list event-details__members">
+              <div class="members-list__item">
+                <div class="members-list__logo members-list__logo--black">
+                  <img src="img/members-page/theatre-01.png" alt="">
+                </div>
+              </div>
+              <div class="members-list__item">
+                <div class="members-list__logo">
+                  <img src="img/members-page/theatre-02.png" alt="">
+                </div>
+              </div>
+              <div class="members-list__item order-1 order-md-0">
+                <div class="members-list__logo members-list__logo--black">
+                  <img src="img/members-page/theatre-03.png" alt="">
+                </div>
+              </div>
+              <div class="members-list__item order-0 order-md-1">
+                <div class="members-list__logo">
+                  <img src="img/members-page/theatre-04.gif" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!--h2 content block-->
+        <!--event details partners-->
 
-        <!--media img-->
-        <div class="inner-page__media">
-          <div class="container__inner--sm">
-            <div class="inner-page__media-item">
+        <!--ad block-->
+        <div class="inner-page__content-block">
+          <div class="ad__card">
+            <div class="ad__card-img">
               <picture>
-                <img src="img/general-page/content-img-01.jpg" alt="">
+                <img src="img/general-page/ad-card.jpg" alt="">
               </picture>
             </div>
-            <div class="inner-page__media-attribution">Attribution</div>
-          </div>
-        </div>
-        <!--media img-->
-
-        <!--h3 content block-->
-        <div class="inner-page__content-block">
-          <div class="container__inner--sm">
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
-              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
-              et tortor sodales, lacinia commodo justo. Praesent nec luctus metus. Duis massa augue, vestibulum sed
-              placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex enim.</p>
-
-            <ul class="inner-page__list">
-              <li class="inner-page__list-item">Bullet list item</li>
-              <li class="inner-page__list-item">Bullet list item</li>
-              <li class="inner-page__list-item">Bullet list item</li>
-              <li class="inner-page__list-item">Bullet list item</li>
-            </ul>
-          </div>
-        </div>
-        <!--h3 content block-->
-
-        <!--video-item-->
-        <div class="inner-page__media inner-page__video">
-          <div class="container__inner--sm">
-            <div class="inner-page__media-item">
-              <video class="video__item" poster="img/general-page/video-poster.png" webkit-playsinline="playsinline"
-                     preload="auto" width="1660" height="auto">
-                <source src="" type="video/webm">
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <span class="inner-page__media-icon">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg enable-background="new 0 0 211 299" version="1.1" viewBox="0 0 211 299" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="211 145.6 0 299 0 0"/>
-                  </svg>
-              </span>
+            <div class="ad__card-content">
+              <h2>Ad block title goes here</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nisl ultricies, scelerisque enim sed,
+                tempus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nisl ultricies,
+                scelerisque enim sed, tempus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <div class="ad__card-link">
+                <a href="#" class="btn btn--dark">Find out more</a>
+              </div>
             </div>
-            <div class="inner-page__media-attribution">Attribution</div>
           </div>
         </div>
-        <!--video-item-->
-
+        <!--ad block-->
 
       </div> <!--container-->
     </section>
     <!--inner page content section-->
 
-    <!--related topics-->
-    <section class="related-topics">
-      <div class="container">
-        <h2>Related topics</h2>
-
-        <div class="related-topics__tags">
-          <div class="related-topics__tags-inner">
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 1</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 2</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 3</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 4</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 5</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 6</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 7</a></div>
-            <div class="related-topics__tags-item"><a href="#" class="related-topics__tag">Tag 8</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--related topics-->
-
     <!--inner page suggestions-->
-    <section class="inner-page__suggestions">
+    <section class="inner-page__suggestions featured-events">
       <div class="container">
-        <h2>You may also be interested in...</h2>
+        <h2>Featured events</h2>
         <div class="owl-carousel owl-theme suggestions-carousel">
           <div class="suggestion-carousel__item">
-            <div class="suggestion__card">
+            <div class="suggestion__card featured-events__card">
               <div class="suggestion__card-img">
                 <picture>
-                  <img src="img/general-page/suggestion-01.jpg" alt="">
+                  <img src="img/events-detail-page/suggestion-01.jpg" alt="">
                 </picture>
               </div>
-              <div class="suggestion__card-content">
-                <h3>Title here</h3>
-                <h4 class="suggestion__card-date">Wed 07 Nov</h4>
+              <div class="suggestion__card-content featured-events__card-content">
+                <div class="suggestion__card-title">
+                  <h3>Title lorem ipsum</h3>
+                  <p class="suggestion__card-date">Wed 07 Nov</p>
+                  <p class="suggestion__card-location">Location</p>
+                </div>
+
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">Find out more</a>
@@ -302,12 +318,15 @@
             <div class="suggestion__card">
               <div class="suggestion__card-img">
                 <picture>
-                  <img src="img/general-page/suggestions-02.jpg" alt="">
+                  <img src="img/events-detail-page/suggestion-02.jpg" alt="">
                 </picture>
               </div>
-              <div class="suggestion__card-content">
-                <h3>Title here</h3>
-                <h4 class="suggestion__card-date">Wed 07 Nov</h4>
+              <div class="suggestion__card-content featured-events__card-content">
+                <div class="suggestion__card-title">
+                  <h3>Title lorem ipsum</h3>
+                  <p class="suggestion__card-date">Wed 07 Nov</p>
+                  <p class="suggestion__card-location">Location</p>
+                </div>
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">
@@ -320,12 +339,16 @@
             <div class="suggestion__card">
               <div class="suggestion__card-img">
                 <picture>
-                  <img src="img/general-page/suggestions-03.jpg" alt="">
+                  <img src="img/events-detail-page/suggestion-03.jpg" alt="">
                 </picture>
               </div>
-              <div class="suggestion__card-content">
-                <h3>Title here</h3>
-                <h4 class="suggestion__card-date">Wed 07 Nov</h4>
+              <div class="suggestion__card-content featured-events__card-content">
+                <div class="suggestion__card-title">
+                  <h3>Title lorem ipsum</h3>
+                  <span class="content-card__label">M</span>
+                  <p class="suggestion__card-date">Wed 07 Nov</p>
+                  <p class="suggestion__card-location">Location</p>
+                </div>
                 <p>Our Agnam etur. Sam doluptat quas mincsati arumqui dolorepro beatia eum quia sedignihil ido quidell.
                   Osametur milliquias.</p>
                 <a href="#" class="link-more">
@@ -408,6 +431,7 @@
   );
 </script>
 <script src="js/vendor/owl.carousel.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
