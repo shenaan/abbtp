@@ -24,6 +24,9 @@
     color: $text-color;
     margin-top: 8px;
   }
+  h3{
+    margin-bottom: 5px;
+  }
 }
 
 .suggestion__card-img{
@@ -51,7 +54,7 @@
   }
 
   @include respond-to(md){
-    padding-bottom: $gap * 0.5;
+    padding: $gap * 0.5 15px;
   }
 }
 

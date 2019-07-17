@@ -1,0 +1,23 @@
+.event-card__item{
+  .content-card{
+    padding: 0;
+  }
+  .content-card__info{
+    padding: $gap * 0.5 15px 32px;
+    position: relative;
+    p{
+      line-height: 1.22rem;
+    }
+  }
+  .content-card__label{
+    top: 0;
+    right: 0;
+  }
+
+  @include respond-to(md){
+    .content-card__info{
+      padding: $gap * 0.5 15px;
+      position: relative;
+    }
+  }
+}

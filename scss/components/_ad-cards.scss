@@ -3,6 +3,15 @@
   flex-wrap: wrap;
   background-color: #fff;
 
+  .btn{
+    display: flex;
+  }
+
+  @include respond-to(sm){
+    .btn{
+      display: inline-flex;
+    }
+  }
   @include respond-to(md) {
     flex-wrap: nowrap;
   }

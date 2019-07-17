@@ -14,6 +14,36 @@
   }
 }
 
+.content-card__media{
+  display: flex;
+  picture, img{
+    width: 100%;
+  }
+  img{
+    object-fit: cover;
+    object-position: center;
+    max-height: 300px;
+  }
+  @include respond-to(md){
+    img{
+      max-height: none;
+    }
+  }
+}
+
+.content-card__title{
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 5px;
+  h3{
+    margin-bottom: 5px;
+  }
+  p{
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+}
+
 .content-card__label {
   background-color: $yellow-color;
   font-weight: bold;

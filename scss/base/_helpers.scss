@@ -109,3 +109,10 @@ section{
     display: none;
   }
 }
+
+.padding-bottom--gap{
+  padding-bottom: 37px;
+  @include respond-to(md){
+    padding-bottom: 45px;
+  }
+}

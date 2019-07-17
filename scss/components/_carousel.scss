@@ -1,10 +1,4 @@
 .owl-carousel {
-  &--fullwidth {
-    .owl-nav {
-      left: 0;
-      right: 0;
-    }
-  }
   .owl-nav {
     position: absolute;
     top: 50%;
@@ -16,45 +10,108 @@
     align-items: center;
     padding-bottom: 50px;
   }
+
+  &--fullwidth {
+    .owl-nav {
+      left: 0px;
+      right: 0px;
+    }
+  }
+  &--yellow{
+    .owl-nav {
+      left: 20px;
+      right: 20px;
+    }
+  }
   @include respond-to(md) {
     left: 10px;
     right: 10px;
+    &--fullwidth {
+      left: 0;
+      right: 0;
+      .owl-nav {
+        max-width: 1320px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: auto;
+      }
+    }
   }
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-  background: rgba(255, 255, 255, 0.7) !important;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:focus {
-    outline: none;
-  }
-  @include respond-to(md) {
-    width: 43px;
-    height: 43px;
-  }
-}
-
-.owl-carousel .owl-nav button {
-  span {
-    background-repeat: no-repeat;
-    font-size: 0;
-    background-image: url(../img/arrow-left.svg);
-    width: 13px;
-    height: 25px;
-    display: block;
-    margin: auto;
+.owl-carousel {
+  .owl-nav button.owl-next, .owl-nav button.owl-prev {
+    background: rgba(255, 255, 255, 0.7) !important;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus {
+      outline: none;
+    }
     @include respond-to(md) {
-      width: 16px;
-      height: 30px;
+      width: 43px;
+      height: 43px;
     }
   }
-  &.owl-next {
-    span {
-      transform: rotate(180deg);
+  &--yellow {
+    .owl-nav button.owl-next, .owl-nav button.owl-prev  {
+      background-color: transparent !important;
+      @include square(33px);
+
+      @include respond-to(md){
+        @include square(44px);
+      }
     }
   }
 }
+
+.owl-carousel {
+  .owl-nav button {
+    span {
+      background-repeat: no-repeat;
+      font-size: 0;
+      background-image: url(../img/arrow-left.svg);
+      width: 13px;
+      height: 25px;
+      display: block;
+      margin: auto;
+      @include respond-to(md) {
+        width: 16px;
+        height: 30px;
+      }
+    }
+    &.owl-next {
+      span {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &--yellow {
+    .owl-nav button {
+      span {
+        @include square(33px);
+        background-image: none;
+        border-left: 2px solid $yellow-color;
+        border-bottom: 2px solid $yellow-color;
+        transform: rotate(45deg);
+        @include respond-to(md) {
+          width: 44px;
+          height: 44px;
+        }
+      }
+      &.owl-next {
+        span {
+          border-left: none;
+          border-bottom: none ;
+          border-right: 2px solid $yellow-color;
+          border-top: 2px solid $yellow-color;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
