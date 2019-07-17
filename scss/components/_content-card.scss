@@ -23,7 +23,11 @@
   right: 15px;
   border-radius: 50%;
   @include square(30px);
-  padding-top: 3px;
+  min-width: 30px;
+  max-height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  //padding-top: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
