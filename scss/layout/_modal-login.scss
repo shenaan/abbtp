@@ -1,0 +1,43 @@
+.modal-login__input-wrap {
+  margin-bottom: 25px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.33;
+    font-weight: bold;
+  }
+}
+
+.modal-login__input {
+  width: 100%;
+  background: #fff;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  color: $dark-color;
+  font-size: 1rem;
+  border: none !important;
+
+  @include input-placeholder() {
+    color: $dark-color;
+    font-size: 1rem;
+  }
+}
+
+.modal-login__link-wrap {
+  margin-bottom: 20px;
+}
+
+.modal-login__submit {
+  margin-top: 35px;
+
+  .btn {
+    min-width: 190px;
+  }
+}

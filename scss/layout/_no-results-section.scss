@@ -1,0 +1,21 @@
+.no-results__content{
+  padding: 26px 0 $gap * 2;
+
+  h2{
+    font-size: 1.55rem; //28px
+    line-height: 2.11rem; //38px
+    margin-bottom: 16px;
+  }
+  p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .search{
+    margin-top: $gap;
+    width: 100%;
+  }
+
+  @include respond-to(md){
+    padding: $gap 0 $gap * 4;
+  }
+}

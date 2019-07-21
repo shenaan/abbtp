@@ -1,7 +1,15 @@
 .hero--inner-page {
   position: relative;
   padding-bottom: $gap;
-  min-height: 303px;
+  min-height: 313px;
+
+  &.no-padding{
+    padding-bottom: 0;
+
+    .page-submenu__outer-return{
+      bottom: $gap * 0.5;
+    }
+  }
 
   .hero__text-wrap {
     min-height: 10px !important;
@@ -23,7 +31,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 303px;
+  min-height: 313px;
   width: 100%;
   position: absolute;
   top: 0;

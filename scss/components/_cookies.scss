@@ -1,0 +1,56 @@
+.cookies-modal{
+  background-color: #70706f;
+  padding: 55px 0 37px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+
+  p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #fff;
+  }
+
+  @include respond-to(md){
+    padding: 33px 0 37px;
+  }
+}
+
+.cookies__inner{
+  position: relative;
+  p{
+    margin-bottom: 5px;
+  }
+
+  @include respond-to(md){
+    padding-right: 180px;
+  }
+}
+
+.cookies-close{
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  font-weight: 500;
+}
+
+.cookies-close__btn{
+  background: transparent;
+  border-radius: 0 !important;
+  border: none !important;
+  cursor: pointer;
+  outline: none;
+  svg{
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+    width: 27px;
+    margin-left: 13px;
+    polygon{
+      stroke-width: 15px;
+      stroke: #fff;
+    }
+  }
+}

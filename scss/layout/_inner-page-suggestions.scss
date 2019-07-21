@@ -37,7 +37,7 @@
   img{
     object-fit: cover;
     object-position: center;
-    max-height: 300px;
+    max-height: 190px;
   }
   @include respond-to(md){
     img{

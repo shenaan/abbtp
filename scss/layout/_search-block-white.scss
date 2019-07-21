@@ -100,4 +100,36 @@
   }
 }
 
+/*search page*/
+
+.search-block__heading{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $gap * 0.5;
+  h2{
+    margin-bottom: 30px;
+    font-size: 1.55rem; //28px
+    line-height: 2.11rem; //38px
+    padding-right: 15px;
+    text-align: left;
+    width:  100%;
+    max-width: 100%;
+  }
+  .search{
+    margin: 0;
+    max-width: 500px;
+  }
+
+  @include respond-to(md){
+    flex-wrap: nowrap;
+    margin-bottom: $gap;
+    h2{
+      width: fit-content;
+      margin-bottom: 0;
+    }
+    .search{
+      margin-left: auto;
+    }
+  }
+}
 

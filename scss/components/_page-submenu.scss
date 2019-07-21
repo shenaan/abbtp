@@ -1,9 +1,20 @@
 .page-submenu__outer {
   padding-top: 0.5*$gap;
 
+  &-return{
+    position: absolute;
+    bottom: $gap * 0.5;
+    z-index: 2;
+  }
+
   @include respond-to(md) {
     padding-top: 0;
-    padding-bottom: $gap*0.5;
+    padding-bottom: $gap * 0.5;
+
+    &-return{
+      position: relative;
+      bottom: auto !important;
+    }
   }
 }
 
@@ -14,11 +25,19 @@
 
   &.page-return__submenu{
     text-align: left;
+    a{
+      font-size: 0.88rem;
+    }
   }
 
   @include respond-to(md) {
     color: #fff;
     text-align: center;
+    &.page-return__submenu{
+      a{
+        font-size: 1rem;
+      }
+    }
   }
 }
 
@@ -53,13 +72,16 @@
   }
 
   &.page-submenu__return-item{
+    a{
+      color: #fff;
+    }
     &:before{
       content: '';
       display: inline-block;
       vertical-align: middle;
       @include square(11px);
-      border-left: 1px solid $dark-color;
-      border-top: 1px solid $dark-color;
+      border-left: 1px solid #fff;
+      border-top: 1px solid #fff;
       margin-right: 15px;
       position: relative;
       transform: rotate(-45deg);
@@ -71,12 +93,6 @@
     padding-bottom: 5px;
     &:after {
       border-color: #fff;
-    }
-    &.page-submenu__return-item{
-      &:before{
-        border-color: #fff;
-        top: -2px;
-      }
     }
   }
   @include respond-to(lg) {

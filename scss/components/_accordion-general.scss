@@ -16,6 +16,7 @@
 
   @include respond-to(md) {
     padding: $gap * 0.5 20px;
+    margin-bottom: $gap;
   }
 }
 

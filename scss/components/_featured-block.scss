@@ -1,14 +1,26 @@
 .featured__block {
-  padding: $gap * 1.5 0 0;
+  padding: $gap 0 0;
+
+  &.no-padding{
+    padding: 0;
+  }
   h2 {
-    margin-bottom: $gap;
+    margin-bottom: 30px;
     text-align: left;
     line-height: 1;
   }
 
   &.inner-page__suggestions{
-    background-color: transparent;
+    background: transparent;
     text-align: left;
+  }
+
+  @include respond-to(md){
+    padding: $gap * 1.5 0 0;
+
+    h2{
+      margin-bottom: $gap;
+    }
   }
 }
 

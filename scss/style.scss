@@ -43,6 +43,9 @@
 @import 'layout/map-section';
 @import 'layout/event-details-partners';
 @import 'layout/featured-events-card';
+@import 'layout/no-results-section';
+@import 'layout/search-suggestions';
+@import 'layout/modal-login';
 
 // 5. Components
 @import 'components/buttons';
@@ -80,6 +83,10 @@
 @import 'components/dropdown';
 @import 'components/form';
 @import 'components/event-card-item';
+@import 'components/search-block-checkboxes';
+@import 'components/search-suggestions-list';
+@import 'components/cookies';
+@import 'components/modal';
 
 
 

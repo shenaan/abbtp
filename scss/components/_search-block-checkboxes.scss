@@ -1,0 +1,29 @@
+.search-block__checkboxes{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include respond-to(sm){
+    margin-bottom: -15px;
+  }
+}
+
+.search-block__checkbox-item{
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+
+  &:last-of-type{
+    margin-right: 0;
+  }
+  @include respond-to(xs){
+    width: 50%;
+    max-width: 50%;
+  }
+  @include respond-to(md){
+    width: auto;
+    max-width: none;
+    margin-right: 80px;
+    margin-bottom: 15px;
+  }
+}

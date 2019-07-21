@@ -102,6 +102,7 @@
 .event-details__media{
   order: 0;
   width: 225px;
+  margin-bottom: $gap * 0.5;
 
   .map{
     margin-bottom: 11px;
@@ -116,6 +117,7 @@
     max-width: 200px;
     order: 1;
     margin-left: auto;
+    margin-bottom: 0;
   }
   @include respond-to(lg){
     max-width: 300px;
