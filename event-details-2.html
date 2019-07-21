@@ -32,7 +32,7 @@
       <img class="page-header__logo" src="img/logo.png" alt=""/>
     </a>
     <div class="page-header__right-nav">
-      <a href="#" class="btn btn--white-outline page-header__btn--desktop">Membership log in</a>
+      <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-login">Membership log in</a>
       <button class="page-header__hamburger">
         <span></span>
         <span></span>
@@ -40,7 +40,7 @@
       </button>
     </div>
     <div class="page-header__nav-block">
-      <a href="#" class="btn page-header__btn--mobile btn--white-outline">Membership log in</a>
+      <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-login">Membership log in</a>
       <nav class="page-header__nav">
         <ul class="page-header__nav-main">
           <li class="menu-item-has-children">
@@ -89,13 +89,13 @@
 <main>
   <div class="inner-page__content-wrap">
     <!--hero inner page-->
-    <section class="hero--inner-page">
+    <section class="hero--inner-page no-padding">
       <div class="container">
         <div class="hero__text-wrap">
           <h1>&nbsp;</h1>
         </div>
       </div>
-      <div class="page-submenu__outer">
+      <div class="page-submenu__outer page-submenu__outer-return">
         <div class="container">
           <ul class="page-submenu page-return__submenu">
             <li class="page-submenu__item page-submenu__return-item is-active"><a href="#" class="page-submenu__link">Back
@@ -133,7 +133,9 @@
               <div class="event-details__img">
                 <img src="img/events-detail-page/theatre-02.png" alt="">
               </div>
-              <div class="map map--sm event-details__map" id="event-details__map--sm"></div>
+              <div class="map map--sm event-details__map" id="event-details__map--sm">
+                <img src="img/events-detail-page/map-sm.png" alt="">
+              </div>
               <a
                 href="https://www.google.com/maps/place/Association+Of+British+Theatre+Technicians/@51.520561,-0.1070799,18z/data=!4m5!3m4!1s0x48761b4e07a0cecb:0x5868cd7398813cae!8m2!3d51.520511!4d-0.106066"
                 class="link link--xs" target="_blank">View large map</a>
@@ -425,27 +427,6 @@
 </script>
 <script src="js/vendor/owl.carousel.js"></script>
 <script src="js/main.min.js"></script>
-
-<script>
-
-  function initialize() {
-    var latlng = new google.maps.LatLng(51.520561, -0.1070799, 18);
-    var myOptions = {
-      zoom: 12,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      disableDefaultUI: true
-    };
-    var map = new google.maps.Map(document.getElementById("event-details__map--sm"),
-      myOptions);
-  }
-
-</script>
-
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5zhEZUvthCJ7wmiUYfw4EWXXedD8jmIk&callback=initialize">
-</script>
-
 
 </body>
 </html>

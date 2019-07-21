@@ -32,7 +32,7 @@
                 <img class="page-header__logo" src="img/logo.png" alt="" />
             </a>
             <div class="page-header__right-nav">
-                <a href="#" class="btn btn--white-outline page-header__btn--desktop">Membership log in</a>
+                <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-login">Membership log in</a>
                 <button class="page-header__hamburger">
                     <span></span>
                     <span></span>
@@ -40,7 +40,7 @@
                 </button>
             </div>
             <div class="page-header__nav-block">
-                <a href="#" class="btn page-header__btn--mobile btn--white-outline">Membership log in</a>
+                <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-login">Membership log in</a>
                 <nav class="page-header__nav">
                     <ul class="page-header__nav-main">
                         <li class="menu-item-has-children">
@@ -329,6 +329,83 @@
                 </div>
             </div>
         </footer>
+
+      <div class="cookies-modal">
+        <p class="cookies-close">Accept and close
+          <button type="button" class="cookies-close__btn">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg enable-background="new 120 219.1 367.2 367.2" version="1.1" viewBox="120 219.1 367.2 367.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="474.9 219.1 303.6 391.1 131.6 219.1 120 230.8 291.3 402.7 120 574.7 131.6 586.3 303.6 414.4 474.9 586.3 487.2 574.7 315.2 402.7 487.2 230.8"/>
+          </svg>
+          </button>
+        </p>
+        <div class="container">
+          <div class="cookies__inner">
+            <p>We use cookies to ensure you get the best experience on our website</p>
+            <a href="#" class="link link--xs">Find out more</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-overlay"></div>
+      <div class="modal modal-login">
+        <div class="modal-login__inner">
+            <button type="button" class="modal-login__close">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg enable-background="new 120 219.1 367.2 367.2" version="1.1" viewBox="120 219.1 367.2 367.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="474.9 219.1 303.6 391.1 131.6 219.1 120 230.8 291.3 402.7 120 574.7 131.6 586.3 303.6 414.4 474.9 586.3 487.2 574.7 315.2 402.7 487.2 230.8"/>
+              </svg>
+            </button>
+          <div class="modal__heading">
+            <h2>Login</h2>
+            <p>
+              Lead in text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor
+              <a href="#" class="link link--xs">dui congue at.</a>
+            </p>
+          </div>
+          <div class="modal-login__form-wrap">
+            <form action="" class="modal-login__form">
+              <div class="modal-login__input-wrap">
+                <label for="modal-login__number">Membership number</label>
+                <input type="text" id='modal-login__number' class="modal-login__input">
+              </div>
+              <div class="modal-login__input-wrap">
+                <label for="modal-login__password">Password</label>
+                <input type="password" id='modal-login__password' class="modal-login__input">
+              </div>
+              <div class="modal-login__link-wrap">
+                <a href="#" class="link link--xs">Forgotten your membership number?</a>
+              </div>
+              <div class="modal-login__link-wrap">
+                <a href="#" class="link link--xs">Forgotten your password?</a>
+              </div>
+              <div class="modal-login__submit">
+                <button type="submit" class="btn btn--dark btn--lg">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-renew">
+        <div class="modal-login__inner">
+          <button type="button" class="modal-login__close">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg enable-background="new 120 219.1 367.2 367.2" version="1.1" viewBox="120 219.1 367.2 367.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="474.9 219.1 303.6 391.1 131.6 219.1 120 230.8 291.3 402.7 120 574.7 131.6 586.3 303.6 414.4 474.9 586.3 487.2 574.7 315.2 402.7 487.2 230.8"/>
+              </svg>
+          </button>
+          <div class="modal__heading">
+            <h2>Renew your membership</h2>
+            <p>
+              To continue accessing all the benefits of your ABTT membership, you need to renew.
+            </p>
+            <p>You can do this easily and quickly online.</p>
+          </div>
+          <div class="modal-btn__wrap">
+            <button type="submit" class="btn btn--dark btn--lg">Renew</button>
+          </div>
+        </div>
+      </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

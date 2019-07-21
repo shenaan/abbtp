@@ -32,7 +32,7 @@
       <img class="page-header__logo" src="img/logo.png" alt=""/>
     </a>
     <div class="page-header__right-nav">
-      <a href="#" class="btn btn--white-outline page-header__btn--desktop">Membership log in</a>
+      <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-login">Membership log in</a>
       <button class="page-header__hamburger">
         <span></span>
         <span></span>
@@ -40,7 +40,7 @@
       </button>
     </div>
     <div class="page-header__nav-block">
-      <a href="#" class="btn page-header__btn--mobile btn--white-outline">Membership log in</a>
+      <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-login">Membership log in</a>
       <nav class="page-header__nav">
         <ul class="page-header__nav-main">
           <li class="menu-item-has-children">
@@ -89,13 +89,13 @@
 <main>
   <div class="inner-page__content-wrap">
     <!--hero inner page-->
-    <section class="hero--inner-page">
+    <section class="hero--inner-page no-padding">
       <div class="container">
         <div class="hero__text-wrap">
           <h1>&nbsp;</h1>
         </div>
       </div>
-      <div class="page-submenu__outer">
+      <div class="page-submenu__outer page-submenu__outer-return">
         <div class="container">
           <ul class="page-submenu page-return__submenu">
             <li class="page-submenu__item page-submenu__return-item is-active"><a href="#" class="page-submenu__link">Back
@@ -130,7 +130,7 @@
               </p>
             </div>  <!--events-detail__content-->
             <div class="event-details__media">
-              <div class="event-details__img">
+              <div class="event-details__img margin-bottom--0">
                 <img src="img/events-detail-page/theatre-02.png" alt="">
               </div>
             </div>
@@ -203,7 +203,7 @@
 
     <!--map section-->
     <section class="map-section">
-      <div id="event-details__map" class="map map--lg"></div>
+      <div id="event-details__map" class="map map--lg"><img src="img/events-detail-page/map-lg.png" alt=""></div>
       <div class="map-details">
         <div class="container">
           <div class="map-details__inner">
@@ -429,26 +429,6 @@
 </script>
 <script src="js/vendor/owl.carousel.js"></script>
 <script src="js/main.min.js"></script>
-
-<script>
-
-  function initialize() {
-    var latlng = new google.maps.LatLng(51.520561, -0.1070799,18);
-    var myOptions = {
-      zoom: 16,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      disableDefaultUI: true
-    };
-    var map = new google.maps.Map(document.getElementById("event-details__map"),
-      myOptions);
-  }
-
-</script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5zhEZUvthCJ7wmiUYfw4EWXXedD8jmIk&callback=initialize">
-</script>
-
 
 </body>
 </html>
