@@ -27,10 +27,11 @@
 .featured__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -9px;
+  margin: 0 -9px -22.5px;
 
   @include respond-to(md) {
     flex-wrap: nowrap;
+    margin-bottom: 0;
   }
 }
 

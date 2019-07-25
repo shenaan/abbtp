@@ -1,0 +1,24 @@
+.search-filter__shop{
+  padding: 0;
+  margin: 0 -9px -18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-filter__shop-item {
+  height: $gap;
+  min-width: 234px;
+  padding: 0 9px;
+  margin-bottom: 18px;
+}
+
+.search-filter__shop-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+  padding: 2px 7px;
+  font-size: 1.1rem;
+}

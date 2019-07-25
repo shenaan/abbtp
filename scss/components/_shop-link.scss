@@ -1,0 +1,22 @@
+.shop-link{
+  display: block;
+  width: 27px;
+  position: absolute;
+  top: 264px;
+  right: 20px;
+
+  img{
+    width: 100%;
+  }
+
+  @include respond-to(md){
+    position: relative;
+    top: 4px;
+    right: auto;
+    margin-right: 15px;
+    width: 36px;
+  }
+  @include respond-to(lg){
+    margin-right: 30px;
+  }
+}

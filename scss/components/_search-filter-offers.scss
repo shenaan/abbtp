@@ -13,7 +13,7 @@
 .search-filter__offer-item{
   width: 100%;
   max-width: 100%;
-  height: 45px;
+  height: $gap;
   padding: 0 8px;
   margin-bottom: 8px;
   @include respond-to(sm){

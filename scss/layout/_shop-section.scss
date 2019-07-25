@@ -1,0 +1,13 @@
+.shop__section{
+
+
+
+  @include respond-to(md){
+    .shop__list-item{
+      margin-bottom: 50px;
+    }
+  }
+}
+.shop-cards__list{
+
+}
