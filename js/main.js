@@ -168,34 +168,39 @@ $(document).ready(function () {
     }
   });
 
+  function loadItems(quantity, link, parent, item){
+    let target = link;
+    let parents = target.parents(parent);
+    let itemHidden = parents.find(item + '.is-hidden');
+    if (itemHidden.length === 0) {
+      target.addClass('is-inactive');
+    } else {
+      itemHidden.slice(0, quantity).fadeIn().removeClass('is-hidden');
+    }
+  }
+
+  //page load items
+  $('.content-cards__load-link').on('click', function (e) {
+    e.preventDefault();
+    loadItems(3, $(this), '.content-cards__list', '.content-cards__list-item');
+  });
+
+  //load shop items
+  $('.shop-cards__load-link').on('click', function (e) {
+    e.preventDefault();
+    loadItems(4, $(this), '.shop__section', '.shop__list-item');
+  });
+
   //load members - members page
   $('.member-list__load-link').on('click', function (e) {
     e.preventDefault();
-    let $this = $(this);
-    let itemHidden = $this.parents('.members-list').find('.members-list__item.is-hidden');
-    if (itemHidden.length === 0) {
-      $this.addClass('is-inactive');
-    } else {
-      itemHidden.slice(0, 4).fadeIn().removeClass('is-hidden');
-    }
+    loadItems(4, $(this), '.members-list', '.members-list__item');
   });
 
   $('.members-block__title-btn').on('click', function () {
     let $this = $(this);
     $this.parents('.members-block').find('.members-list__wrap').slideToggle().toggleClass('is-hidden');
     $this.find('span').toggleClass('is-hidden');
-  });
-
-  //FAQs page load items
-  $('.content-cards__load-link').on('click', function (e) {
-    e.preventDefault();
-    let $this = $(this);
-    let itemHidden = $this.parents('.content-cards__list').find('.content-cards__list-item.is-hidden');
-    if (itemHidden.length === 0) {
-      $this.addClass('is-inactive');
-    } else {
-      itemHidden.slice(0, 3).fadeIn().removeClass('is-hidden');
-    }
   });
 
   //General accordion page
