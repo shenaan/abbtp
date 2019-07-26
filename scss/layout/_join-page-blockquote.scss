@@ -1,0 +1,9 @@
+.intro--inner-page__blockquote {
+  &.join-page__blockquote {
+    padding-bottom: calc(45px + 67px);
+
+    @include respond-to(md) {
+      padding-bottom: calc(90px + 67px);
+    }
+  }
+}

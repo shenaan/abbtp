@@ -11,6 +11,11 @@
 .shop-card {
   background-color: transparent;
   padding: 0;
+  h3{
+    br{
+      display: none;
+    }
+  }
   p {
     margin-bottom: 5px;
     font-weight: 500;
@@ -22,6 +27,14 @@
   .shop-card__img{
     margin-top: 0;
   }
+
+  @include respond-to(sm){
+    h3{
+      br{
+        display: block;
+      }
+    }
+  }
 }
 
 .shop-card__img {
@@ -29,23 +42,27 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  padding: 13px 34px;
+  padding: 13px;
   margin-bottom: 7px;
   img {
     width: auto;
     height: 127px;
   }
 
-  @include respond-to(sm){
-    padding: 26px 63px;
+  @include respond-to(xs){
     img{
-      height: 159px;
+      height: 160px;
+    }
+  }
+  @include respond-to(sm){
+    padding: 26px;
+    img{
+      height: 200px;
     }
   }
   @include respond-to(md){
     img{
-      width: 100%;
-      height: auto;
+      height: 243px;
     }
   }
 }

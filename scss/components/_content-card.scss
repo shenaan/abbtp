@@ -16,8 +16,12 @@
 
 .content-card__media{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   picture, img{
     width: 100%;
+    height: 100%;
   }
   img{
     object-fit: cover;
@@ -25,9 +29,13 @@
     max-height: 190px;
   }
   @include respond-to(md){
+    height: 210px;
     img{
       max-height: none;
     }
+  }
+  @include respond-to(lg){
+    height: 231px;
   }
 }
 
@@ -40,6 +48,12 @@
   }
   p{
     font-weight: 500;
+    margin-bottom: 5px;
+  }
+}
+
+.content-card__subtitle{
+  h3{
     margin-bottom: 5px;
   }
 }

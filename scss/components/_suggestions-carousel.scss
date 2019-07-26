@@ -1,14 +1,18 @@
 /*Suggestions carousel*/
-
+.suggestions-carousel__wrap{
+  @include respond-to(md){
+    margin: 0 -10px;
+  }
+}
 .suggestions-carousel{
   &.owl-carousel {
     .owl-nav button.owl-next,.owl-nav button.owl-prev{
       background: rgba(255,255,255,0.9);
     }
-  }
-
-  @include respond-to(md){
-    margin: 0 -10px;
+    @include respond-to(md) {
+      left: auto;
+      right: auto;
+    }
   }
 }
 

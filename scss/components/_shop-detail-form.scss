@@ -1,0 +1,34 @@
+.shop-detail__form-inner{
+  display: flex;
+}
+
+.shop-detail__info-select{
+  width: 92px;
+  margin-right: 27px;
+}
+
+.shop-detail__action-btn {
+  svg {
+    display: inline-block;
+    width: 25px;
+    margin-right: 11px;
+    @include transition;
+    polygon {
+      fill: #fff;
+      @include transition;
+    }
+    line {
+      stroke: #fff;
+      @include transition;
+    }
+  }
+
+  @include on-event(svg) {
+    polygon {
+      fill: $yellow-color;
+    }
+    line {
+      stroke: $yellow-color;
+    }
+  }
+}

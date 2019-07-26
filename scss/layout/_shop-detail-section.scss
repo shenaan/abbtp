@@ -1,0 +1,29 @@
+.shop-detail{
+  padding: 24px 0 53px;
+  @include respond-to(md){
+    padding: $gap 0 $gap * 1.5;
+  }
+}
+
+.shop-detail__inner{
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(md){
+    flex-wrap: nowrap;
+  }
+}
+
+.shop-detail__inner-item{
+  width: 100%;
+  max-width: 100%;
+
+  @include respond-to(md){
+    width: 50%;
+    max-width: 50%;
+
+    &:first-of-type{
+      padding-right: 58px;
+    }
+  }
+}

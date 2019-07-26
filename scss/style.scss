@@ -47,6 +47,10 @@
 @import 'layout/search-suggestions';
 @import 'layout/modal-login';
 @import 'layout/shop-section';
+@import 'layout/shop-detail-section';
+@import 'layout/join-section';
+@import 'layout/join-page-blockquote';
+@import 'layout/join-events-suggestions';
 
 // 5. Components
 @import 'components/buttons';
@@ -91,6 +95,10 @@
 @import 'components/shop-link';
 @import 'components/search-filter-shop';
 @import 'components/shop-cards';
+@import 'components/shop-details-slider';
+@import 'components/shop-detail-info';
+@import 'components/shop-detail-form';
+@import 'components/shop-detail-tabs';
 
 
 
