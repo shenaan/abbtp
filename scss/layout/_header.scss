@@ -19,13 +19,23 @@
   &__btn {
     &--desktop.btn {
       display: none;
+      flex: 1 0 auto;
+      max-height: 40px;
+      &.is-hidden {
+        display: none;
+      }
       @include respond-to(md) {
-        display: block;
+        display: inline-flex;
         z-index: 100;
       }
     }
     &--mobile.btn {
       max-width: 200px;
+      max-height: 40px;
+      flex: 1 0 auto;
+      &.is-hidden {
+        display: none;
+      }
       @include respond-to(md) {
         display: none;
       }
@@ -163,7 +173,7 @@
       position: relative;
       top: 0;
       right: 0;
-      margin-left: 33px;
+      margin-left: 20px;
       margin-top: 3px;
       width: 43px;
       @include when-inside('.page-header.is-opened') {
@@ -174,6 +184,9 @@
         width: 45px;
         margin-bottom: 15px;
       }
+    }
+    @include respond-to(lg) {
+      margin-left: 33px;
     }
   }
   .container {
@@ -189,6 +202,61 @@
       right: 39px;
       top: 27px;
       display: flex;
+    }
+  }
+  &__logged-in {
+    display: none;
+    p {
+      color: #fff;
+      font-size: 1.1rem; //20px
+      line-height: 1.61rem; //29px
+      padding-right: 20px;
+      max-width: 170px;
+    }
+    .page-header__btn--desktop.btn,
+    .page-header__btn--mobile.btn {
+      max-width: 93px;
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+    &.show-in-mob.is-active {
+      display: flex;
+    }
+    &.hide-in-mob.is-active {
+      display: none;
+    }
+    @include respond-to(xs) {
+      align-items: center;
+      p {
+        max-width: 100%;
+        padding-right: 25px;
+      }
+    }
+    @include respond-to(md) {
+      align-items: flex-start;
+      &.show-in-mob.is-active {
+        display: none;
+      }
+      &.hide-in-mob.is-active {
+        display: flex;
+      }
+      p {
+        max-width: 150px;
+        padding-right: 10px;
+      }
+    }
+    @include respond-min(1200) {
+      align-items: center;
+      p {
+        max-width: 220px;
+        padding-right: 20px;
+      }
+    }
+    @include respond-to(lg) {
+      p {
+        padding-right: 25px;
+        max-width: 100%;
+      }
     }
   }
   .sub-menu {
