@@ -75,17 +75,27 @@
   display: none;
   vertical-align: middle;
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 0;
 
   img{
-    max-width: 28px;
+    max-width: 24px;
   }
 
   @include respond-to(md){
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 }
+
+/// Safari styles
+//@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
+//  @media {
+//    .event-time__link-icon {
+//      top: 0;
+//    }
+//  }
+//}
 
 .past-events__link{
   max-width: none;

@@ -7,6 +7,7 @@
     padding-left: 30px;
 
     .checkmark {
+      display: block;
       position: absolute;
       top: 0px;
       left: 0;
@@ -48,6 +49,16 @@
   }
 }
 
+/// Safari styles
+//@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
+//  @media {
+//    .form__checkbox-wrap {
+//      .checkmark {
+//        top: -4px;
+//      }
+//    }
+//  }
+//}
 
 .form__select-wrap {
   position: relative;
