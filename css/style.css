@@ -4891,13 +4891,18 @@ blockquote {
   display: none;
   vertical-align: middle;
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 0; }
   .event-time__link-icon img {
-    max-width: 28px; }
+    max-width: 24px; }
   @media (min-width: 1024px) {
     .event-time__link-icon {
-      display: inline-block; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .past-events__link {
   max-width: none;
@@ -4921,11 +4926,6 @@ blockquote {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
-  .dropdown__wrap:hover .dropdown__icon, .dropdown__wrap:focus .dropdown__icon, .dropdown__wrap:active .dropdown__icon {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 10px; }
   @media (min-width: 768px) {
     .dropdown__wrap {
       width: -webkit-fit-content;
@@ -4946,6 +4946,7 @@ blockquote {
       max-width: 290px; } }
 
 .dropdown__icon {
+  display: block;
   border-top: 1px solid #2E2D2C;
   border-right: 1px solid #2E2D2C;
   -webkit-transform: rotate(135deg);
@@ -4988,6 +4989,7 @@ blockquote {
   position: relative;
   padding-left: 30px; }
   .form__checkbox-wrap label .checkmark {
+    display: block;
     position: absolute;
     top: 0px;
     left: 0;
