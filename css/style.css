@@ -4891,12 +4891,6 @@ blockquote {
       -ms-flex-align: center;
       align-items: center; } }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .event-time__link-icon {
-      position: relative;
-      top: 2px; } } }
-
 .past-events__link {
   max-width: none;
   width: -webkit-fit-content;
@@ -5032,12 +5026,9 @@ blockquote {
   align-items: center; }
 
 .form__checkbox-text {
-  line-height: 1; }
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .form__checkbox-wrap label {
-      top: 2px; } } }
+  line-height: 1;
+  margin: auto;
+  display: block; }
 
 .form__select-wrap {
   position: relative;
