@@ -4823,7 +4823,8 @@ blockquote {
   .filter-events__row:last-of-type {
     margin-top: 45px; }
   .filter-events__row a {
-    color: #2E2D2C; }
+    color: #2E2D2C;
+    line-height: 1; }
   .filter-events__row .search-block__col {
     width: 100%;
     max-width: 100%;
@@ -4942,7 +4943,7 @@ blockquote {
   height: 16px;
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 2.5px;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in; }
