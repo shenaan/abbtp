@@ -5012,11 +5012,23 @@ blockquote {
   visibility: hidden;
   display: none; }
 
+.form__checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .form__checkbox-text {
   line-height: 1;
   margin: auto 0;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 0.88rem; }
+  @media (min-width: 1024px) {
+    .form__checkbox-text {
+      font-size: 1rem; } }
 
 .form__select-wrap {
   position: relative;
