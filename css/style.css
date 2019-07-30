@@ -4875,16 +4875,10 @@ blockquote {
   @media (min-width: 768px) {
     .event-time__link {
       margin: auto; } }
-  @media (min-width: 1024px) {
-    .event-time__link:last-of-type {
-      padding-right: 36px; } }
 
 .event-time__link-icon {
   display: none;
-  vertical-align: middle;
-  position: absolute;
-  top: 5px;
-  right: 0; }
+  vertical-align: middle; }
   .event-time__link-icon img {
     max-width: 24px; }
   @media (min-width: 1024px) {
