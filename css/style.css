@@ -4557,7 +4557,9 @@ blockquote {
   border: none !important;
   border-radius: 0 !important;
   color: #2E2D2C;
-  cursor: pointer; }
+  text-align: left;
+  cursor: pointer;
+  outline: none !important; }
   @media (min-width: 768px) {
     .dropdown__link {
       width: auto;
@@ -4582,18 +4584,22 @@ blockquote {
   left: 0;
   right: 0;
   background: #fff;
-  width: 100%;
+  min-width: 100%;
   transition: all 0.3s ease-in;
   opacity: 0;
   visibility: hidden;
   transform-origin: top;
   z-index: 1; }
+  @media (min-width: 1024px) {
+    .dropdown-list {
+      min-width: 200%; } }
 
 .dropdown-list__item {
   padding: 5px; }
 
 .dropdown-list__link {
-  display: inline-block; }
+  display: inline-block;
+  line-height: 1.3 !important; }
 
 .form__checkbox-wrap label {
   position: relative;
