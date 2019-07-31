@@ -40,6 +40,12 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('.page-header__btn-logout').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.page-header').find('.page-header__logged-in').removeClass('is-active');
+    $(this).parents('.page-header').find('.page-header__btn-login').removeClass('is-hidden');
+  });
 // /Page Header
 
   //close cookies
@@ -134,7 +140,6 @@ $(document).ready(function () {
   });
 
   //shop detail carousel
-
   $('.shop-detail__slider').owlCarousel({
     loop: true,
     margin: 0,
