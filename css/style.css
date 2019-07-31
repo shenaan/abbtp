@@ -4489,13 +4489,6 @@ blockquote {
         max-width: 50%;
         margin-bottom: 0; } }
 
-.filter-events__row .form__checkbox-container {
-  display: flex; }
-  @media screen and (min-width: 360px) {
-    .filter-events__row .form__checkbox-container {
-      white-space: nowrap;
-      display: block; } }
-
 .filter-event__link {
   display: flex;
   align-items: center;
@@ -4607,9 +4600,9 @@ blockquote {
   line-height: 1; }
   .form__checkbox-wrap label .checkmark {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     margin-right: 10px;
+    margin-top: -2px;
     height: 20px;
     width: 20px;
     background-color: #fff;
@@ -4642,12 +4635,17 @@ blockquote {
 .form__checkbox-text {
   line-height: 1;
   margin: auto 0;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   font-size: 0.88rem; }
   @media (min-width: 1024px) {
     .form__checkbox-text {
       font-size: 1rem; } }
+
+.form__checkbox-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center; }
 
 .form__select-wrap {
   position: relative;
