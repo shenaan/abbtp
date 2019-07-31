@@ -4846,6 +4846,15 @@ blockquote {
         max-width: 50%;
         margin-bottom: 0; } }
 
+.filter-events__row .form__checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (min-width: 360px) {
+    .filter-events__row .form__checkbox-container {
+      white-space: nowrap;
+      display: block; } }
+
 .filter-event__link {
   display: -webkit-box;
   display: -ms-flexbox;
