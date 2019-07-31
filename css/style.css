@@ -574,7 +574,7 @@ p {
     content: '';
     display: inline-block;
     margin-left: 3px;
-    margin-top: 2px;
+    margin-top: 1px;
     width: 10px !important;
     height: 15px;
     background: url(../img/arrow-right.svg) no-repeat center/contain;
@@ -4600,7 +4600,8 @@ blockquote {
 .form__checkbox-wrap label {
   position: relative;
   display: block;
-  line-height: 1; }
+  line-height: 1;
+  font-size: 0.88rem; }
   .form__checkbox-wrap label .checkmark {
     position: relative;
     display: block;
@@ -4634,6 +4635,9 @@ blockquote {
   width: 0;
   visibility: hidden;
   display: none; }
+@media (min-width: 1024px) {
+  .form__checkbox-wrap label {
+    font-size: 1rem; } }
 
 .form__checkbox-text {
   line-height: 1;
