@@ -76,6 +76,7 @@
       width: 13px;
       height: 25px;
       display: block;
+      margin: auto;
       @include respond-to(md) {
         width: 16px;
         height: 30px;

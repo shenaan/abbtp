@@ -8,6 +8,7 @@
 
   a{
     color: $text-color;
+    line-height: 1;
   }
 
   .search-block__col{
@@ -23,9 +24,9 @@
   .content-card__label{
     position: relative;
     margin-left: 15px;
-    display: inline-flex;
     top: auto;
     right: auto;
+    vertical-align: middle;
   }
 
   @include respond-to(sm){
@@ -64,38 +65,21 @@
   @include respond-to(sm){
     margin: auto;
   }
-  @include respond-to(md){
-    &:last-of-type{
-      padding-right: 36px;
-    }
-  }
 }
 
 .event-time__link-icon{
   display: none;
   vertical-align: middle;
-  position: absolute;
-  top: 5px;
-  right: 0;
 
   img{
     max-width: 24px;
   }
 
   @include respond-to(md){
-    display: flex;
-    align-items: center;
+    display: block;
+    padding-top: 5px;
   }
 }
-
-/// Safari styles
-//@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
-//  @media {
-//    .event-time__link-icon {
-//      top: 0;
-//    }
-//  }
-//}
 
 .past-events__link{
   max-width: none;

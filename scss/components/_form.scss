@@ -1,16 +1,15 @@
 .form__checkbox-wrap{
   label {
-    //width: 120px;
-    //max-width: 120px;
-    margin-right: 10px;
     position: relative;
-    padding-left: 30px;
+    display: block;
+    line-height: 1;
+    font-size: 0.88rem;
 
     .checkmark {
+      position: relative;
       display: block;
-      position: absolute;
-      top: 0px;
-      left: 0;
+      margin-right: 10px;
+      margin-top: -2px;
       height: 20px;
       width: 20px;
       background-color: #fff;
@@ -47,18 +46,33 @@
     visibility: hidden;
     display: none;
   }
+
+  @include respond-to(md){
+    label{
+      font-size: 1rem;
+    }
+  }
 }
 
-/// Safari styles
-//@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
-//  @media {
-//    .form__checkbox-wrap {
-//      .checkmark {
-//        top: -4px;
-//      }
-//    }
-//  }
-//}
+.form__checkbox-text{
+  line-height: 1;
+  margin: auto 0;
+  display: block;
+  font-size: 0.88rem;
+
+  @include respond-to(md){
+    font-size: 1rem;
+  }
+}
+
+.form__checkbox-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 .form__select-wrap {
   position: relative;

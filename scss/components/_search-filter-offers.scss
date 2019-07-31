@@ -38,6 +38,9 @@
     color: #fff;
   }
   @include respond-to(md){
+    padding: 2px;
+  }
+  @include respond-min(1200){
     padding: 0;
   }
 }

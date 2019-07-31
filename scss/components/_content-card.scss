@@ -70,9 +70,12 @@
   min-width: 30px;
   max-height: 30px;
   min-height: 30px;
-  max-height: 30px;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
   //padding-top: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
 }
