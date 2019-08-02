@@ -1,0 +1,27 @@
+.contact-section{
+  padding-top: $gap * 1.5;
+  padding-bottom: 80px;
+}
+
+.contact-form__wrap{
+  width: 500px;
+
+  .form__input-wrap,.form__select-wrap, .form__textarea-wrap{
+    margin-bottom: 18px;
+  }
+  .form__select-icon{
+    @include size(20px, 20px);
+    top: -13px;
+  }
+  .form__select-placeholder{
+    border: 1px solid #70706f;
+    font-size: 0.88rem;
+    color: $text-color;
+    font-family: $text-font-stack;
+    padding-left: 18px;
+  }
+}
+
+.contact__submit-btn{
+  margin-top: 60px;
+}

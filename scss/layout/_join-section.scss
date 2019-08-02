@@ -1,54 +1,50 @@
-.join-section{
+.join-section {
   padding-top: 0;
   padding-bottom: $gap * 1.5;
 
-  @include respond-to(md){
+  @include respond-to(md) {
     padding-bottom: $gap * 2;
   }
 }
 
-.join-types{
+.join-types {
   padding-bottom: calc(45px - 22.5px);
 }
 
-.content-cards__list{
-  &.join-cards__list{
+.content-cards__list {
+  &.join-cards__list {
     position: relative;
     margin-top: -67px;
   }
 }
 
-.join-card__item.content-cards__list-item{
+.join-card__item.content-cards__list-item {
   width: 100%;
   max-width: 100%;
-  .content-card{
+  .content-card {
     padding: 0;
   }
-  .content-card__info{
-    padding: 16px 15px 32px;
+  .content-card__info {
+    padding: 16px 15px 37px;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     width: 33.33%;
     max-width: 33.33%;
   }
 }
 
-.join-cards__title{
+.join-cards__title {
   padding: 19px 10px 17px;
   text-align: center;
 
-  h2{
-
-  }
-
-  @include respond-to(md){
-    h2{
+  @include respond-to(md) {
+    h2 {
       max-width: 230px;
       @include center();
     }
   }
-  @include respond-to(lg){
-    h2{
+  @include respond-to(lg) {
+    h2 {
       max-width: 100%;
     }
   }

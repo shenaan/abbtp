@@ -1,0 +1,43 @@
+.members__content-card{
+  .content-card__title{
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .content-card__info{
+    p{
+      line-height: 1.22rem;
+    }
+  }
+}
+
+.members__card-media {
+  border: 5px solid #a8a7a7;
+  background-color: #fff;
+  height: 190px;
+  padding: 16px 30px;
+  &--black {
+    background-color: #000;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  @include respond-to(md) {
+    border-width: 10px;
+    padding: 22px 60px;
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+.owl-carousel .owl-item{
+  .members__card-media{
+    img{
+      width: auto;
+    }
+  }
+}

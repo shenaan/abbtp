@@ -1,0 +1,38 @@
+.filter-jobs__row{
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -14px;
+
+  &:last-of-type{
+    margin-bottom: -14px;
+  }
+  @include respond-to(md){
+    flex-wrap: nowrap;
+  }
+}
+
+.filter-jobs__col {
+  padding: 0 7px;
+  margin-bottom: 14px;
+}
+
+.filter-jobs__select-wrap {
+  width: 228px;
+  background-color: $yellow-color;
+  p{
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    &:after{
+      content: '';
+      display: block;
+      border-right: 2px solid $text-color;
+      border-bottom: 2px solid $text-color;
+      transform: rotate(45deg);
+      @include size(20px, 20px);
+      margin-left: 14px;
+      position: relative;
+      top: -5px
+    }
+  }
+}
