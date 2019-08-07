@@ -1,5 +1,10 @@
-$(document).ready(function () {
+/* Init object fit polyfill */
+/* To make it work, add 'font-family: 'object-fit: cover;';' to image */
+if (window.objectFitImages) {
+  window.objectFitImages();
+}
 
+$(document).ready(function () {
   function isMobile() {
     if ($('.is-mobile').css('display') === 'block') {
       return true;
@@ -13,23 +18,18 @@ $(document).ready(function () {
     e.stopPropagation();
     let header = $('.page-header');
     header.toggleClass('is-opened');
-
-    if ($(window).width() < 768) {
-      if (header.hasClass('is-opened')) {
-        // disableScrolling();
-      } else {
-        // enableScrolling();
-      }
-    }
+    $('body, html').toggleClass('no-scroll');
   });
 
-  $('.page-header .menu-item-has-children').find('a').on('click', function (e) {
-    $('.menu-item-has-children a').removeClass('open-sub-menu');
-    $('.menu-item-has-children .sub-menu').removeClass('opened');
-    $(this).toggleClass('open-sub-menu');
-    $(this).siblings('.sub-menu').toggleClass('opened');
-    e.preventDefault();
-    return false;
+  $('.page-header .menu-item-has-children a').on('click', function (e) {
+    let $this = $(this);
+    if (isMobile()) {
+      e.preventDefault();
+      $this.siblings('.sub-menu').slideToggle();
+      $this.toggleClass('open-sub-menu');
+      $this.parent().siblings('.menu-item-has-children').find('a').removeClass('open-sub-menu');
+      $this.parent().siblings('.menu-item-has-children').find('.sub-menu').slideUp();
+    }
   });
 
   $(document).on('click', function (e) {
@@ -37,14 +37,15 @@ $(document).ready(function () {
     if ($('.page-header').hasClass('is-opened')) {
       if (!$(e.target).closest('.page-header__nav-block').length) {
         $('.page-header.is-opened').removeClass('is-opened');
+        $('body, html').removeClass('no-scroll');
       }
     }
   });
 
   $('.page-header__btn-logout').on('click', function (e) {
     e.preventDefault();
-    $(this).parents('.page-header').find('.page-header__logged-in').removeClass('is-active');
-    $(this).parents('.page-header').find('.page-header__btn-login').removeClass('is-hidden');
+    $('.page-header').find('.page-header__logged-in').removeClass('is-active');
+    $('.page-header').find('.page-header__btn-log').toggleClass('is-hidden');
   });
 // /Page Header
 
@@ -191,11 +192,23 @@ $(document).ready(function () {
   }
 
   $(".form__select-wrap select").on('change', function () {
+    console.log($(this).find('select option:selected').text())
     selectChange();
   });
 
+  //handle file upoad
+  function uploadInputChange() {
+    $(".form__upload-wrap").each(function () {
+      $(this).find(".form__upload-overlay").text($(this).find("input").val());
+    })
+  }
+
+  $('.form__upload-wrap input').on('change', function () {
+    uploadInputChange();
+  });
+
   //load more items
-  function loadItems(quantity, link, parent, item){
+  function loadItems(quantity, link, parent, item) {
     let target = link;
     let parents = target.parents(parent);
     let itemHidden = parents.find(item + '.is-hidden');
@@ -244,7 +257,7 @@ $(document).ready(function () {
     siblings.find('.accordion-item__content--hidden').removeClass('is-visible');
     siblings.find('.accordion-item__head-btn span.plus').removeClass('is-hidden');
     siblings.find('.accordion-item__head-btn span.minus').addClass('is-hidden');
-  })
+  });
 
   //shop details tabs
   $('.shop-detail__tab-link').on('click', function (e) {
@@ -256,6 +269,28 @@ $(document).ready(function () {
 
     $('.shop-detail__tab-item').removeClass('is-active');
     $this.parents('.shop-detail__tabs').find('.shop-detail__tab-item' + href).addClass('is-active');
-  })
+  });
+
+  //registration page accordion
+  $('.registration__block-title').on('click', function f() {
+    $(this).parent().find('.registration__block-body').slideToggle();
+    $(this).toggleClass('is-open');
+  });
+
+  //tooltip
+  $('.form-tooltip__icon').on('click', function (e) {
+    e.stopPropagation();
+    $(this).siblings('.form__tooltip-content').toggleClass('is-visible');
+  });
+
+  $(document).on('click', function (e) {
+    if (!e) e = window.event;
+    e.stopPropagation();
+    if ($('.form__tooltip-content').hasClass('is-visible')) {
+      if (!$(e.target).closest('.form__tooltip-content.is-visible').length) {
+        $('.form__tooltip-content').removeClass('is-visible');
+      }
+    }
+  });
 
 });
