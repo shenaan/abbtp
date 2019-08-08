@@ -3481,19 +3481,17 @@ section {
   .registration-section .form__select-wrap p {
     height: 40px; }
   .registration-section .form__checkbox-wrap .checkmark {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
     width: 22px;
     height: 22px;
     margin-right: 15px;
-    border-color: #2E2D2C;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 22px;
-    flex: 0 0 22px; }
+    border-color: #2E2D2C; }
   .registration-section .form__checkbox-text {
-    line-height: 1.05rem; }
+    line-height: 1.05rem;
+    line-height: 1.3; }
   .registration-section .form-tooltip__outer .checkmark {
     margin-right: 22px; }
+  .registration-section .form-tooltip__outer .form__checkbox-wrap {
+    padding-right: 41px; }
   .registration-section .form__select-placeholder {
     border: 1px solid #2E2D2C;
     font-size: 0.88rem;
@@ -5337,6 +5335,9 @@ blockquote {
 .map img {
   width: 100%; }
 
+.filter-events__checkbox.form__checkbox-wrap .checkmark {
+  top: 5px; }
+
 .filter-events__row {
   text-align: left;
   -ms-flex-wrap: wrap;
@@ -5557,9 +5558,11 @@ blockquote {
     font-size: 1rem; } }
 
 .form__checkbox-text {
-  line-height: 1;
+  line-height: 1.3;
   margin: auto 0;
   display: block;
+  -ms-flex-item-align: center;
+  align-self: center;
   font-size: 0.88rem;
   padding-top: 0px; }
   @media (min-width: 1024px) {
@@ -5571,7 +5574,7 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-left: 40px; }
+  padding-left: 37px; }
 
 .checkbox-group__col {
   width: 33.33%;
