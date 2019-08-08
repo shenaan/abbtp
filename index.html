@@ -26,6 +26,7 @@
   </head>
 
   <body>
+      <div class="is-mobile"></div>
       <header class="page-header">
           <div class="container">
             <a href="index.html" class="page-header__logo">
@@ -34,9 +35,9 @@
             <div class="page-header__right-nav">
               <div class="page-header__logged-in is-active hide-in-mob">
                 <p>Hello member name</p>
-                <a href="#" class="btn page-header__btn--desktop btn--white-outline page-header__btn-logout">Log out</a>
               </div>
-                <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-login is-hidden">Membership log in</a>
+              <a href="#" class="btn page-header__btn--desktop btn--white-outline page-header__btn-log page-header__btn-logout">Log out</a>
+                <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-log page-header__btn-login is-hidden">Membership log in</a>
                 <button class="page-header__hamburger">
                     <span></span>
                     <span></span>
@@ -44,11 +45,18 @@
                 </button>
             </div>
             <div class="page-header__nav-block">
-              <div class="page-header__logged-in is-active show-in-mob">
-                <p>Hello member name</p>
-                <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-logout">Log out</a>
+              <div class="page-header__nav-top">
+                <div class="page-header__logged-in is-active show-in-mob">
+                  <p>Hello member name</p>
+                </div>
+                <a href="#" class="btn page-header__btn btn--white-outline page-header__btn-log page-header__btn-logout">Log out</a>
+                <a href="#" class="btn page-header__btn btn--white-outline page-header__btn-log page-header__btn-login is-hidden">Membership log in</a>
+                <button class="page-header__hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
-                <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-login is-hidden">Membership log in</a>
                 <nav class="page-header__nav">
                     <ul class="page-header__nav-main">
                         <li class="menu-item-has-children">

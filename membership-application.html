@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-  <title>Search Results</title>
+  <title>Membership Application</title>
   <meta name="description" content=""/>
   <meta
     name="viewport"
@@ -105,62 +105,139 @@
 </header>
 <main>
   <div class="inner-page__content-wrap">
-    <section class="hero--inner-page no-padding">
+    <!--hero inner page-->
+    <section class="hero--inner-page">
       <div class="container">
         <div class="hero__text-wrap">
           <h1>
-           &nbsp;
+            Full member application
           </h1>
         </div>
       </div>
       <div class="hero__bg--inner-page img__overlay" style="background-image: url('img/hero-general.png')"></div>
     </section>
+    <!--hero inner page-->
 
-    <section class="no-results__content">
+    <section class="intro--inner-page">
       <div class="container">
         <div class="container__inner--sm">
-          <h2>We’re sorry.</h2>
-          <p>Sorry we can’t find the page that you are looking for.  Try a search.</p>
-          <div class="search">
-            <form action="#">
-              <input type="text" class="search__input"/>
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
+          <div class="lead__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
+              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
+              et tortor sodales, lacinia commodo justo. Praesent nec luctus metus. Duis massa augue, vestibulum sed
+              placerat sed, porttitor et nunc. Pellentesque sagittis luctus magna et viverra. Cras mollis ex enim.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue urna est, sit amet auctor dui
+              congue at. Aenean ligula erat, cursus vel dapibus nec, suscipit vitae risus. Mauris odio tellus, molestie
+              et tortor sodales, lacinia commodo justo. </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!--related topics/search suggestions-->
-    <section class="related-topics search-suggestions">
+    <!--registration section-->
+    <section class="registration-section">
       <div class="container">
-        <div class="heading__underline">
-          <h2>Or you could try...</h2>
-        </div>
+        <div class="registration-form__wrap">
+          <form action="#" class="aplication-form">
 
-        <ul class="related-topics__tags search-suggestions__list">
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 1</a>
-          </li>
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 2</a>
-          </li>
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 3</a>
-          </li>
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 4</a>
-          </li>
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 5</a>
-          </li>
-          <li class="search-suggestions__list-item">
-            <a href="#" class="search-suggestions__list-link">Search term 5</a>
-          </li>
-        </ul>
+            <!--membership registration block-->
+            <div class="registration__block">
+              <div class="registration__block-title">
+                <h2>About you</h2>
+                <span class="registration__block-arrow"></span>
+              </div>
+              <!--membership-registration body-->
+              <div class="registration__block-body">
+                <div class="form__input-wrap">
+                  <label for="application-name" class="form__input-label">First name*</label>
+                  <input type="text" id="application-name" class="form__input">
+                </div>
+                <div class="form__input-wrap">
+                  <label for="application-surname" class="form__input-label">Surname*</label>
+                  <input type="text" id="application-surname" class="form__input">
+                </div>
+                <div class="form__input-wrap">
+                  <label for="application__member-num" class="form__input-label">Membership number</label>
+                  <input type="text" id="application__member-num" class="form__input">
+                </div>
+                <div class="form__input-wrap">
+                  <label for="application-email" class="form__input-label">Email address*</label>
+                  <input type="email" id="application-email" class="form__input">
+                </div>
+                <div class="form__textarea-wrap">
+                  <label for="application-message" class="form__input-label">Message</label>
+                  <textarea class="form__textarea" id="application-message"></textarea>
+                </div>
+                <div class="form__input-wrap form__upload-wrap">
+                  <div class="form__input-label">Upload CV</div>
+                  <label for="application-cv" class="form__upload-label">
+                    <input type="file" id="application-cv" class="form__input form__upload">
+                    <span class="form__upload-overlay"></span>
+                    <span class="btn btn--dark form__upload-btn">Upload file</span>
+                  </label>
+                </div>
+              </div>  <!--membership-registration body-->
+            </div>
+            <!--membership registration block-->
+
+            <!--membership registration block-->
+            <div class="registration__block">
+              <div class="registration__block-title">
+                <h2>References</h2>
+                <span class="registration__block-arrow"></span>
+              </div>
+              <!--membership-registration body-->
+              <div class="registration__block-body">
+                <div class="registration-reference__block">
+                  <div class="registration__block__subtitle">Reference 1</div>
+                  <div class="form__input-wrap">
+                    <label for="reference-name" class="form__input-label">First name*</label>
+                    <input type="text" id="reference-name" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference-surname" class="form__input-label">Surname*</label>
+                    <input type="text" id="reference-surname" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference-email" class="form__input-label">Email address</label>
+                    <input type="email" id="reference-email" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference__tel" class="form__input-label">Telephone</label>
+                    <input type="tel" id="reference__tel" class="form__input">
+                  </div>
+                </div>
+                <div class="registration-reference__block">
+                  <div class="registration__block__subtitle">Reference 2</div>
+                  <div class="form__input-wrap">
+                    <label for="reference-name-2" class="form__input-label">First name*</label>
+                    <input type="text" id="reference-name-2" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference-surname-2" class="form__input-label">Surname*</label>
+                    <input type="text" id="reference-surname-2" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference-email-2" class="form__input-label">Email address</label>
+                    <input type="email" id="reference-email-2" class="form__input">
+                  </div>
+                  <div class="form__input-wrap">
+                    <label for="reference__tel-2" class="form__input-label">Telephone</label>
+                    <input type="tel" id="reference__tel-2" class="form__input">
+                  </div>
+                </div>
+              </div>    <!--membership-registration body-->
+            </div>
+            <!--membership registration block-->
+
+            <div class="form__submit-btn registration__submit-btn">
+              <button type="submit" class="btn btn--dark btn--lg">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
-    <!--related topics/search suggestions-->
+    <!--registration section-->
 
   </div>
 </main>
@@ -233,5 +310,6 @@
 </script>
 <script src="js/vendor/owl.carousel.js"></script>
 <script src="js/main.min.js"></script>
+
 </body>
 </html>

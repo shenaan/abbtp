@@ -26,13 +26,22 @@
 </head>
 
 <body>
+<div class="is-mobile"></div>
 <header class="page-header">
   <div class="container">
     <a href="index.html" class="page-header__logo">
       <img class="page-header__logo" src="img/logo.png" alt=""/>
     </a>
     <div class="page-header__right-nav">
-      <a href="#" class="btn btn--white-outline page-header__btn--desktop page-header__btn-login">Membership log in</a>
+      <div class="page-header__logged-in hide-in-mob">
+        <p>Hello member name</p>
+      </div>
+      <a href="#"
+         class="btn page-header__btn--desktop btn--white-outline page-header__btn-log page-header__btn-logout is-hidden">Log
+        out</a>
+      <a href="#"
+         class="btn btn--white-outline page-header__btn--desktop page-header__btn-log page-header__btn-login">Membership
+        log in</a>
       <button class="page-header__hamburger">
         <span></span>
         <span></span>
@@ -40,7 +49,22 @@
       </button>
     </div>
     <div class="page-header__nav-block">
-      <a href="#" class="btn page-header__btn--mobile btn--white-outline page-header__btn-login">Membership log in</a>
+      <div class="page-header__nav-top">
+        <div class="page-header__logged-in show-in-mob">
+          <p>Hello member name</p>
+        </div>
+        <a href="#"
+           class="btn page-header__btn btn--white-outline page-header__btn-log page-header__btn-logout is-hidden">Log
+          out</a>
+        <a href="#"
+           class="btn page-header__btn btn--white-outline page-header__btn-log page-header__btn-login">Membership
+          log in</a>
+        <button class="page-header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <nav class="page-header__nav">
         <ul class="page-header__nav-main">
           <li class="menu-item-has-children">
@@ -173,7 +197,7 @@
                     </div>
 
                     <div class="accordion-item__btn-more">
-                      <a href="#" class="btn btn--dark">Find out more</a>
+                      <a href="#" class="btn btn--lg btn--dark">Find out more</a>
                     </div>
                   </div>
                 </div>
@@ -211,7 +235,7 @@
                     </div>
 
                     <div class="accordion-item__btn-more">
-                      <a href="#" class="btn btn--dark">Find out more</a>
+                      <a href="#" class="btn btn--lg btn--dark">Find out more</a>
                     </div>
                   </div>
                 </div>
@@ -249,7 +273,7 @@
                     </div>
 
                     <div class="accordion-item__btn-more">
-                      <a href="#" class="btn btn--dark">Find out more</a>
+                      <a href="#" class="btn btn--lg btn--dark">Find out more</a>
                     </div>
                   </div>
                 </div>
@@ -287,7 +311,7 @@
                     </div>
 
                     <div class="accordion-item__btn-more">
-                      <a href="#" class="btn btn--dark">Find out more</a>
+                      <a href="#" class="btn btn--lg btn--dark">Find out more</a>
                     </div>
                   </div>
                 </div>
@@ -317,7 +341,7 @@
                 ultricies, scelerisque enim sed, tempus.
               </p>
               <div class="ad__card-link">
-                <a href="#" class="btn btn--dark">Find out more</a>
+                <a href="#" class="btn btn--dark btn--lg">Find out more</a>
               </div>
             </div>
           </div>
