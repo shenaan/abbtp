@@ -3598,11 +3598,7 @@ section {
   .registration__checkbox-wrap:last-of-type {
     margin-bottom: 0; }
   .registration__checkbox-wrap .form__checkbox-text {
-    font-size: 0.88rem;
-    padding-top: 3px; }
-  @media (min-width: 1024px) {
-    .registration__checkbox-wrap .form__checkbox-text {
-      padding-top: 0; } }
+    font-size: 0.88rem; }
 
 .registration__gift-img {
   width: 159px;
