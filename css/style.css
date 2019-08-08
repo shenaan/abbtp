@@ -3483,6 +3483,8 @@ section {
   .registration-section .form__checkbox-wrap .checkmark {
     margin-right: 15px;
     border-color: #2E2D2C; }
+  .registration-section .form__checkbox-wrap .form__checkbox-container {
+    padding-left: 40px; }
   .registration-section .form__checkbox-text {
     line-height: 1.3; }
   .registration-section .form-tooltip__outer .form__checkbox-container {
@@ -3566,8 +3568,8 @@ section {
 
 .registration__date-icon {
   display: none;
-  width: 37px;
-  height: 35px;
+  width: 42px;
+  height: 36px;
   background: url("../img/calendar-icon.png") no-repeat center/contain;
   margin: 0 0 0 auto; }
   @media (min-width: 768px) {
@@ -5877,7 +5879,7 @@ blockquote {
     line-height: 1.2;
     vertical-align: top;
     display: inline-block;
-    padding-top: 2px; }
+    padding-top: 3px; }
   @media (min-width: 572px) {
     .search-block__checkbox-item {
       width: 50%;
