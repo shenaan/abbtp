@@ -5339,13 +5339,20 @@ blockquote {
   top: -2px; }
 
 .form__checkbox-wrap.training-events__checkbox .form__checkbox-container {
-  padding-left: 0; }
+  padding-left: 0;
+  display: block; }
 
 .form__checkbox-wrap.training-events__checkbox .checkmark {
   top: auto;
-  margin: auto 17px auto 0;
   margin-top: 0;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.form__checkbox-wrap.training-events__checkbox .form__checkbox-text {
+  display: inline-block;
+  vertical-align: middle; }
 
 @media (min-width: 572px) {
   .form__checkbox-wrap.training-events__checkbox .checkmark {
@@ -5353,7 +5360,9 @@ blockquote {
 
 @media (min-width: 1024px) {
   .form__checkbox-wrap.filter-events__checkbox .checkmark {
-    top: -1px; } }
+    top: -1px;
+    top: auto;
+    margin-right: 17px; } }
 
 .filter-events__row {
   text-align: left;
@@ -5372,7 +5381,7 @@ blockquote {
       margin-bottom: 0; }
   .filter-events__row .content-card__label {
     position: relative;
-    margin-left: 15px;
+    margin-left: 7px;
     top: auto;
     right: auto;
     vertical-align: middle; }
@@ -5383,7 +5392,9 @@ blockquote {
       .filter-events__row .search-block__col {
         width: 50%;
         max-width: 50%;
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+      .filter-events__row .content-card__label {
+        margin-right: 15px; } }
 
 .filter-event__link {
   display: -webkit-box;
