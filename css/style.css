@@ -5516,7 +5516,10 @@ blockquote {
     border-radius: 0;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20px;
-    flex: 0 0 20px; }
+    flex: 0 0 20px;
+    position: absolute;
+    top: -2px;
+    left: 0; }
     .form__checkbox-wrap label .checkmark--white {
       border: 1px solid #fff; }
     .form__checkbox-wrap label .checkmark--centre {
@@ -5557,7 +5560,8 @@ blockquote {
   line-height: 1;
   margin: auto 0;
   display: block;
-  font-size: 0.88rem; }
+  font-size: 0.88rem;
+  padding-top: 0px; }
   @media (min-width: 1024px) {
     .form__checkbox-text {
       font-size: 1rem; } }
@@ -5566,9 +5570,8 @@ blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  position: relative;
+  padding-left: 40px; }
 
 .checkbox-group__col {
   width: 33.33%;
