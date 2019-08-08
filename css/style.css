@@ -569,20 +569,20 @@ p {
     pointer-events: none; }
 
 .link-more {
-  display: table;
+  display: inline-block;
   letter-spacing: 0;
   font-weight: bold;
   line-height: 18px; }
   .link-more:after {
     content: '';
-    display: table-cell;
+    display: inline-block;
+    align-self: center;
     vertical-align: middle;
-    margin-left: 3px;
+    margin-left: 5px;
     width: 10px !important;
     height: 15px;
     background: url(../img/arrow-right.svg) no-repeat center/contain;
-    transition: all 0.3s ease-in;
-    padding-left: 20px; }
+    transition: all 0.3s ease-in; }
   .link-more.is-inactive {
     opacity: 0.5;
     pointer-events: none; }
