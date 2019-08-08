@@ -2,6 +2,7 @@
   padding: $gap 0 60px;
   @include respond-to(md) {
     padding: $gap 0 $gap * 1.5;
+    padding: 50px 0 $gap * 1.5;
   }
 }
 

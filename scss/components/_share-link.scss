@@ -7,5 +7,12 @@
     font-size: 20px;
     vertical-align: middle;
     margin-right: 5px;
+    @include transition;
+  }
+
+  @include on-event(){
+    i{
+      color: $text-color;
+    }
   }
 }

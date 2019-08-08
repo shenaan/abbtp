@@ -71,3 +71,9 @@ h5 {
 ul{
   list-style-type: none;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  picture{
+    overflow: hidden;
+  }
+}

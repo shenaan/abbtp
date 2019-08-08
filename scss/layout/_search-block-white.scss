@@ -39,7 +39,7 @@
   padding: 28px 15px 35px;
 
   @include respond-to(md){
-    padding: $gap 15px;
+    padding: 40px 15px $gap;
   }
 }
 
@@ -130,7 +130,7 @@
   }
   .search{
     margin: 0;
-    max-width: 500px;
+    max-width: 522px;
   }
 
   @include respond-to(md){

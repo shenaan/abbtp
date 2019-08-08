@@ -1,0 +1,53 @@
+.membership-registration__hero {
+
+  .page-submenu__outer-return {
+    position: relative;
+    padding-top: $gap * 0.5;
+    bottom: auto;
+    li.page-submenu__item{
+      &:before {
+        border-color: $text-color;
+      }
+    }
+    a {
+      color: $text-color !important;
+      font-size: 1.1rem;
+    }
+  }
+  .hero__text-wrap {
+    padding: 150px 0 50px 0;
+    max-height: 313px;
+    min-height: 313px !important;
+  }
+
+  @include respond-to(sm) {
+    .page-submenu__outer-return{
+      position: absolute;
+      top: 0px;
+      right: -20px;
+      left: auto;
+      bottom: auto;
+      z-index: 100;
+      li.page-submenu__item{
+        &:before {
+          border-color: #fff;
+        }
+      }
+      a.page-submenu__link {
+        color: #fff !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+
+  @include respond-to(md) {
+    .page-submenu__outer-return {
+      top: 27px;
+      right: 39px;
+    }
+
+    .hero__text-wrap {
+      max-height: none;
+    }
+  }
+}

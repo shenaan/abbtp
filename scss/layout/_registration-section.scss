@@ -1,0 +1,209 @@
+.registration-section {
+  padding: 0 0 $gap * 1.5;
+
+  .form__input-wrap, .form__select-wrap, .form__input-group, .registration__input-group, .form__textarea-wrap {
+    max-width: 522px;
+    margin-bottom: 23px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__input-label {
+    margin-bottom: 11px;
+    max-width: 522px;
+    &.no-margin {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-form__row {
+    margin-bottom: 49px;
+  }
+
+  .form__input {
+    height: 40px;
+  }
+
+  .form__select-wrap {
+    select {
+      height: 40px;
+    }
+    p {
+      height: 40px;
+    }
+  }
+
+  .form__checkbox-wrap {
+    .checkmark {
+      margin-right: 15px;
+      border-color: $text-color;
+    }
+    .form__checkbox-container{
+      padding-left: 40px;
+    }
+  }
+  .form__checkbox-text {
+    line-height: 1.3;
+  }
+
+  .form-tooltip__outer {
+    .form__checkbox-container {
+      padding-left: 41px;
+    }
+  }
+
+  .form__select-placeholder {
+    border: 1px solid $text-color;
+    font-size: 0.88rem;
+    color: $text-color;
+    font-family: $text-font-stack;
+    padding-left: 18px;
+  }
+
+  .form__textarea {
+    border-color: $text-color;
+  }
+
+  @include respond-to(md) {
+    padding: 36px 0px 96px;
+  }
+}
+
+.registration__block {
+  &--lg {
+    .registration__block-body {
+      padding-top: 36px;
+    }
+  }
+}
+
+.registration-reference__block {
+  margin-bottom: 36px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.registration__input-group {
+  .form__select-wrap {
+    margin-right: 15px;
+    select {
+      width: 140px;
+    }
+  }
+}
+
+.registration__block-title {
+  height: $gap;
+  background: $yellow-gradient;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  &.is-open {
+    .registration__block-arrow {
+      transform: rotate(-45deg) translateY(7px);
+    }
+  }
+}
+
+.registration__block__subtitle {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  line-height: 1.33rem;
+  font-weight: bold;
+  display: block;
+}
+
+.registration__block-arrow {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: -8px;
+  bottom: 0;
+  @include size(20px, 20px);
+  border-right: 2px solid $text-color;
+  border-bottom: 2px solid $text-color;
+  transform: rotate(45deg);
+  margin: auto;
+  cursor: pointer;
+  @include transition;
+
+  @include respond-to(sm) {
+    right: 25px;
+  }
+}
+
+.registration__block-body {
+  padding: 31px 0 38px;
+}
+
+.registration__date-icon {
+  display: none;
+  @include size(42px, 36px);
+  background: url("../img/calendar-icon.png") no-repeat center /contain;
+  margin: 0 0 0 auto;
+
+  @include respond-to(sm) {
+    display: block;
+  }
+}
+
+.registration__checkbox-group {
+  margin-bottom: 5px;
+  max-width: 807px;
+  &--sm {
+    max-width: 500px;
+  }
+  &.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .checkbox-group__title {
+    width: 100%;
+    margin-bottom: 19px;
+  }
+}
+
+.registration__checkbox-wrap {
+  margin-bottom: 20px;
+  margin-bottom: 35px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .form__checkbox-text {
+    font-size: 0.88rem;
+  }
+}
+
+.registration__gift-img {
+  width: 159px;
+  margin-bottom: 27px;
+  img {
+    width: 100%;
+  }
+}
+
+.registration__comment {
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+  }
+}
+
+.registration__checkbox-subgroup {
+  padding-left: 40px;
+}
+
+.registration__submit-btn {
+  margin-top: 70px;
+}

@@ -5,19 +5,23 @@
   p{
     max-width: 765px;
   }
+  h2{
+    margin-bottom: 15px;
+  }
 
   @include respond-to(md){
-    padding: $gap * 0.5 30px;
+    padding: $gap * 0.5 32px;
   }
 }
 
 .content-card__download-icon {
   display: inline-block;
   width: 16px;
+  margin-right: 2px;
 }
 
 .content-card__download-links {
-  margin: 14px 0 10px;
+  margin: 12px 0 10px;
 }
 
 

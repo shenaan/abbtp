@@ -17,27 +17,26 @@
     }
   }
   &__btn {
+    &-log{
+      flex: 1 0 auto;
+      height: 40px;
+      width: 208px;
+      white-space: nowrap;
+      padding: 0;
+      &.is-hidden {
+        display: none;
+      }
+    }
+    &-logout{
+      max-width: 93px;
+    }
     &--desktop.btn {
       display: none;
-      flex: 1 0 auto;
-      max-height: 40px;
       &.is-hidden {
         display: none;
       }
       @include respond-to(md) {
         display: inline-flex;
-        z-index: 100;
-      }
-    }
-    &--mobile.btn {
-      max-width: 200px;
-      max-height: 40px;
-      flex: 1 0 auto;
-      &.is-hidden {
-        display: none;
-      }
-      @include respond-to(md) {
-        display: none;
       }
     }
   }
@@ -76,7 +75,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     @include respond-to(md) {
-      margin-top: 3.5rem;
+      margin-top: 0;
       padding-top: 1.5 * $gap;
       margin-bottom: 1.5 * $gap;
     }
@@ -124,6 +123,24 @@
         color: $yellow-color;
       }
     }
+    &-btn{
+      position: absolute;
+
+    }
+    &-top{
+      display: flex;
+      .page-header__hamburger{
+        margin-left: auto;
+      }
+      .page-header__btn-log{
+        flex: 0 0 198px;
+        margin-right: auto;
+        white-space: nowrap;
+      }
+      @include respond-to(md){
+        padding-top: 30px;
+      }
+    }
   }
   &__hamburger {
     position: absolute;
@@ -135,8 +152,8 @@
     outline: none;
     background: transparent;
     cursor: pointer;
-    z-index: 50;
     @include transition;
+
     span {
       width: 32px;
       height: 2px;
@@ -148,7 +165,7 @@
       @include transition;
     }
     @include when-inside('.page-header.is-opened') {
-      right: 37px;
+      right: 31px;
       top: 26px;
       span {
         position: absolute;
@@ -198,10 +215,20 @@
     position: absolute;
     right: 0px;
     top: 2px;
+    transition: 0s;
+    transition-delay: 0.2s;
+    @include when-inside('.page-header.is-opened'){
+      z-index: -1;
+      opacity: 0;
+    }
+
     @include respond-to(md) {
-      right: 39px;
-      top: 27px;
+      right: 46px;
+      top: 30px;
       display: flex;
+    }
+    @include respond-to(lg){
+      right: 42px;
     }
   }
   &__logged-in {
@@ -260,23 +287,19 @@
     }
   }
   .sub-menu {
-    max-height: 0;
-    @include transition;
-    overflow: hidden;
-    &.opened {
-      max-height: 500px;
-      @include transition;
-    }
+    display: none;
     a {
       padding: 13px 32px 13px 42px;
       &:after {
         display: none;
       }
     }
+    @include respond-to(md){
+      display: none !important;
+    }
   }
   &__buttons {
     text-align: center;
-    //margin-top: 4.65rem;
     margin-top: auto;
     padding-top: $gap;
     margin-bottom: $gap * 0.5;
@@ -287,7 +310,7 @@
     }
     @include respond-to(md) {
       padding-top: 40px;
-      margin-bottom: 42px;
+      padding-bottom: 42px;
     }
   }
 
@@ -295,7 +318,6 @@
     margin-top: 0;
     margin-bottom: 2 * $gap;
   }
-
 }
 
 /*--- /HEADER ---*/

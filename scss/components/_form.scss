@@ -6,16 +6,24 @@
     font-size: 0.88rem;
 
     .checkmark {
-      position: relative;
       display: block;
-      margin-right: 10px;
-      margin-top: -2px;
-      height: 20px;
-      width: 20px;
+      margin-right: 9px;
+      height: 22px;
+      width: 22px;
       background-color: #fff;
       border: 1px solid #aaaaaa;
+      border-radius: 0;
+      flex: 0 0 22px;
+      position: absolute;
+      top: -1px;
+      left: 0;
+
+
       &--white{
         border: 1px solid #fff;
+      }
+      &--centre{
+        align-self: center !important;
       }
       &:after {
         content: "";
@@ -45,6 +53,8 @@
     width: 0;
     visibility: hidden;
     display: none;
+    border: none;
+    border-radius: 0;
   }
 
   @include respond-to(md){
@@ -55,10 +65,10 @@
 }
 
 .form__checkbox-text{
-  line-height: 1;
-  margin: auto 0;
+  line-height: 1.3;
   display: block;
   font-size: 0.88rem;
+  padding-top: 0px;
 
   @include respond-to(md){
     font-size: 1rem;
@@ -69,9 +79,27 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  position: relative;
+  padding-left: 37px;
+}
+
+.checkbox-group__col{
+  width: 33.33%;
+  max-width: 33.33%;
+  padding: 0;
+
+  &--lg{
+    width: 64.66%;
+    max-width: 64.66%;
+  }
+
+  .form__checkbox-wrap{
+    margin-bottom: 27px;
+  }
+}
+
+.checkbox-group__subtitle{
+  margin-bottom: 16px;
 }
 
 .form__select-wrap {
@@ -90,6 +118,7 @@
     display: flex;
     align-items: center;
     padding: 5px 15px 5px 12px;
+    font-weight: 400;
     color: $text-color;
     line-height: 1;
     font-family: $text-font-stack;
@@ -114,7 +143,10 @@
     font-size: 1rem;
     width: 100%;
     height: $gap;
-    border: none;
+    border: none !important;
+    border-collapse: collapse;
+    border-width: 0px;
+    border-radius: 0;
     color: $text-color;
     line-height: 1;
     outline: none;
@@ -132,6 +164,7 @@
 .form__input{
   background-color: #fff;
   border: 1px solid #70706f;
+  border-radius: 0;
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -153,6 +186,26 @@
   margin-bottom: 8px;
   font-weight: bold;
   display: block;
+  &.d-flex{
+    display: flex;
+    align-items: center;
+  }
+  .form__input-label--normal{
+    font-weight: 400;
+  }
+}
+
+.form__label-inner{
+  display: flex;
+  align-items: center;
+}
+
+.form__textarea-wrap{
+  &--sm{
+    .form__textarea{
+      min-height: 85px;
+    }
+  }
 }
 
 .form__textarea{
@@ -161,5 +214,90 @@
   font-family: $text-font-stack;
   padding: 12px 18px;
   width: 100%;
-  min-height: 168px;
+  min-height: 176px;
+  border: 1px solid;
+  border-radius: 0;
+}
+
+.form__input-group{
+  display: flex;
+  flex-direction: column;
+
+  .form__select-wrap{
+    width: 146px;
+    margin-bottom: 11px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond-to(sm){
+    flex-direction: row;
+    align-items: center;
+    .form__select-wrap{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__upload-wrap.form__input-wrap{
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.form__upload{
+  max-width: 302px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.form__upload-label{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  @include respond-to(sm){
+    flex-wrap: nowrap;
+  }
+}
+
+.form__upload-overlay{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  padding-left: 18px;
+  border: 1px solid $text-color;
+  background-color: #fff;
+
+  @include respond-to(sm){
+    height: 100%;
+    width: 302px;
+  }
+}
+
+.form__upload-add{
+  display: flex;
+  max-width: 522px;
+  margin-bottom: 32px;
+}
+
+.form__upload-btn{
+  height: 40px;
+  margin-left: 0;
+  min-width: 187px;
+  margin-top: 9px;
+  @include respond-to(sm){
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+.form__upload-icon{
+  display: block;
+  @include size(16px, 15px);
+  margin-right: 5px;
+  background: url("../img/cross-icon.png")no-repeat center /contain;
 }

@@ -1,13 +1,13 @@
 .contact-section{
-  padding-top: $gap * 1.5;
+  padding-top: $gap * 0.5;
   padding-bottom: 80px;
 }
 
 .contact-form__wrap{
-  width: 500px;
+  max-width: 522px;
 
   .form__input-wrap,.form__select-wrap, .form__textarea-wrap{
-    margin-bottom: 18px;
+    margin-bottom: 26px;
   }
   .form__select-icon{
     @include size(20px, 20px);
@@ -25,3 +25,5 @@
 .contact__submit-btn{
   margin-top: 60px;
 }
+
+

@@ -3,7 +3,7 @@
     padding-bottom: calc(45px + 67px);
 
     @include respond-to(md) {
-      padding-bottom: calc(90px + 67px);
+      padding-bottom: calc(90px + 60px);
     }
   }
 }

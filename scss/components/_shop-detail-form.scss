@@ -5,6 +5,10 @@
 .shop-detail__info-select{
   width: 92px;
   margin-right: 27px;
+  .form__select-wrap span{
+    @include square(16px);
+    right: 15px;
+  }
 }
 
 .shop-detail__action-btn {

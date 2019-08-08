@@ -25,5 +25,16 @@
     &:first-of-type{
       padding-right: 58px;
     }
+    &:last-of-type{
+      padding-left: 15px;
+    }
+  }
+}
+
+.shop-detail__slider-wrap{
+  max-width: 500px;
+  @include center;
+  @include respond-to(md){
+    max-width: none;
   }
 }

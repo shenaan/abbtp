@@ -18,7 +18,7 @@
   }
 
   @include respond-to(md){
-    padding-top: $gap * 2;
+    padding-top: 83px;
     padding-bottom: $gap * 2;
   }
 }

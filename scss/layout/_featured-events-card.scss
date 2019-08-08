@@ -18,4 +18,7 @@
       top: 0;
     }
   }
+  @include respond-to(md){
+    padding: $gap * 0.5 15px $gap;
+  }
 }

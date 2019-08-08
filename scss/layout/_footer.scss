@@ -1,106 +1,113 @@
 /*--- FOOTER ---*/
-.page-footer{
-	background: $dark-color;
-	color: $white-color;
-	text-align: center;
-	padding-top: 34px;
-    padding-bottom: 34px;
-    @include respond-to(md){
-    	text-align: left;
+.page-footer {
+  background: $dark-color;
+  color: $white-color;
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  @include respond-to(md) {
+    text-align: left;
+  }
+  a {
+    color: $white-color;
+    font-weight: 300;
+    @include transition;
+    &:hover {
+      color: $yellow-color;
     }
-	a{
-		color: $white-color;
-		font-weight: 300;
-		@include transition;
-		&:hover{
-			color: $yellow-color;
-		}
-	}
-	strong{
-		font-weight: bold;
-	}
-	p{
-	    margin-bottom: 7px;
-   		line-height: 23px;
-   		font-weight: 300;
-	}
-	&__wrap{
-		border-bottom: 1px solid $white-color;
-		padding-bottom: 0.5 * $gap;
-		margin-bottom: 0.5 * $gap;
-		@include respond-to(md){
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-	}
-	&__nav{
-		li{
-		    margin-bottom: 7px;
-		}
-	}
-	&__col{
-	    margin-bottom: 27px;
-	    &:last-child{
-	    	margin-bottom: 0;
-	    }
-	    @include respond-to(md){
-	    	order: 1;
-	    	text-align: left;
-    	    flex: 0 0 23.7%;
-    	    margin-bottom: 0;
-	    }
-	}
-	@include respond-to(md){
-		&__social{
-			order: 4;
-		}
-	}
-	&__social{
-		a{
-			display: inline-block;
-			margin: 0 12px;
+  }
+  strong {
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 7px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+  &__wrap {
+    border-bottom: 1px solid $white-color;
+    padding-bottom: 0.5 * $gap;
+    margin-bottom: 0.5 * $gap;
+    @include respond-to(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__nav {
+    li {
+      margin-bottom: 7px;
+    }
+  }
+  &__col {
+    margin-bottom: 27px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include respond-to(md) {
+      order: 1;
+      text-align: left;
+      flex: 0 0 23.7%;
+      margin-bottom: 0;
+    }
+  }
+  @include respond-to(md) {
+    &__social {
+      order: 4;
+    }
+  }
+  &__social {
+    a {
+      display: inline-block;
+      margin: 0 12px;
 
-			&:hover{
-				i{
-					color: $yellow-color;
-				}
-			}
-		}
-		i{
-			font-size: 38px;
-			@include transition;
-		}
-	}
-	.copyright{
-		@include respond-to(md){
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		p{
-			font-size: 14px;
-		    line-height: 21px;
-    		margin-bottom: 13px;
-		}
-		&__col{
-			br{
-				display: none;
-			}
-			@include respond-to(md){
-		    	flex: 0 0 22.9%;
-		    	br{
-		    		display: block;
-		    	}
-		    	&:last-child{
-	    		    flex: 0 0 48.9%;
-				    display: flex;
-				    align-items: flex-end;
-				    justify-content: flex-end;
-		    	}
-			}
+      &:hover {
+        i {
+          color: $yellow-color;
+        }
+      }
+      @include respond-to(md) {
+        margin: 0 8px;
+      }
+      @include respond-to(lg) {
+        margin: 0 12px;
+      }
+    }
+    i {
+      font-size: 38px;
+      @include transition;
+    }
+  }
+  .copyright {
+    @include respond-to(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 13px;
+    }
+    &__col {
+      br {
+        display: none;
+      }
+      @include respond-to(md) {
+        flex: 0 0 22.9%;
+        br {
+          display: block;
+        }
+        &:last-child {
+          flex: 0 0 48.9%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+        }
+      }
 
-		}
-	}
+    }
+  }
 }
+
 /*--- /FOOTER ---*/

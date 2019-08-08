@@ -2,11 +2,31 @@
   display: block;
   width: 27px;
   position: absolute;
-  top: 264px;
+  top: 269px;
   right: 20px;
-
+  background-position: center 0;
+  @include transition;
+  @include size(27px, 22px);
+  @include on-event(){
+    svg{
+      fill: #fff;
+      line{
+        stroke: #fff;
+      }
+    }
+  }
   img{
     width: 100%;
+  }
+  svg{
+    display: block;
+    width: 100%;
+    fill: $yellow-color;
+    @include transition;
+    line{
+      stroke: $yellow-color;
+      @include transition;
+    }
   }
 
   @include respond-to(md){
@@ -15,6 +35,7 @@
     right: auto;
     margin-right: 15px;
     width: 36px;
+    @include size(39px, 31px);
   }
   @include respond-to(lg){
     margin-right: 30px;

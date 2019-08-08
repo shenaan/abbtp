@@ -1,0 +1,59 @@
+.form-tooltip__outer{
+  display: flex;
+  align-items: center;
+  @include when-inside('.form__textarea-wrap'){
+    margin-bottom: 11px;
+  }
+}
+
+.form__tooltip{
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  @include respond-to(xs){
+    margin-right: auto;
+    margin-left: 23px;
+  }
+}
+
+.form-tooltip__icon{
+  display: block;
+  @include square(28px);
+  background: url("../img/tooltip-icon.png")no-repeat center /contain;
+}
+
+.form__tooltip-content{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-height: 64px;
+  min-width: 225px;
+  width: fit-content;
+  padding: 12px 14px;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transform: translateX(20px);
+  @include transition-04;
+  cursor: auto;
+
+  &.is-visible{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    transform: translateX(0px);
+  }
+  p{
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+    color: #fff;
+    max-width: 182px;
+  }
+  @include respond-to(md){
+    left: 40px;
+    top: -12px;
+    right: auto;
+  }
+}

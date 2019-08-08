@@ -19,8 +19,8 @@
   }
   &--yellow{
     .owl-nav {
-      left: 20px;
-      right: 20px;
+      left: 10px;
+      right: 10px;
     }
   }
   @include respond-to(md) {
@@ -36,6 +36,12 @@
         margin: auto;
       }
     }
+    &--yellow{
+      .owl-nav {
+        left: 20px;
+        right: 20px;
+      }
+    }
   }
 }
 
@@ -47,6 +53,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include ieStyles{
+      justify-content: flex-start;
+    }
     &:focus {
       outline: none;
     }
@@ -77,6 +86,7 @@
       height: 25px;
       display: block;
       margin: auto;
+      @include transition;
       @include respond-to(md) {
         width: 16px;
         height: 30px;
@@ -109,6 +119,11 @@
           border-right: 2px solid $yellow-color;
           border-top: 2px solid $yellow-color;
           transform: rotate(45deg);
+        }
+      }
+      &:hover{
+        span{
+          border-color: $text-color;
         }
       }
     }

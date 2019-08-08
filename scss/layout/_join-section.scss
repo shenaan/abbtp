@@ -14,7 +14,7 @@
 .content-cards__list {
   &.join-cards__list {
     position: relative;
-    margin-top: -67px;
+    margin-top: -68px;
   }
 }
 
@@ -25,7 +25,7 @@
     padding: 0;
   }
   .content-card__info {
-    padding: 16px 15px 37px;
+    padding: 20px 12px 37px;
   }
   @include respond-to(md) {
     width: 33.33%;

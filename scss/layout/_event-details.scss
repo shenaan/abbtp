@@ -16,7 +16,7 @@
 
   @include respond-to(md){
     display: block;
-    padding: $gap 15px 80px;
+    padding: $gap 15px 51px;
   }
 }
 
@@ -24,9 +24,21 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  @include center;
+
+  @include respond-to(sm){
+    width: 100%;
+    padding: 0 80px;
+  }
 
   @include respond-to(md){
     flex-wrap: nowrap;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  @include respond-to(lg){
+    padding-left: 199px;
+    padding-right: 199px;
   }
 }
 
@@ -47,12 +59,12 @@
     width: calc(100% - 250px);
     max-width: calc(100% - 250px);
     p{
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
   }
   @include respond-to(lg){
-    width: calc(100% - 300px);
-    max-width: calc(100% - 300px);
+    width: calc(100% - 304px);
+    max-width: calc(100% - 304px);
   }
 }
 
@@ -74,13 +86,12 @@
     top: auto;
     right: auto;
     margin-right: $gap * 0.5;
-    display: inline-flex;
     vertical-align: middle;
   }
 
   @include respond-to(md){
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 21px;
+    margin-bottom: 23px;
     display: flex;
     h2{
       line-height: 2.11rem;
@@ -114,18 +125,19 @@
     white-space: nowrap;
   }
   @include respond-to(md) {
-    max-width: 200px;
+    width: 200px;
     order: 1;
     margin-left: auto;
     margin-bottom: 0;
   }
   @include respond-to(lg){
-    max-width: 300px;
+    width: 234px;
+    max-width: 234px;
   }
 }
 
 .event-details__img{
-  margin-bottom: $gap * 0.5;
+  margin-bottom: 18.5px;
   padding: 6px;
   width: 100%;
   border: 5px solid #a8a7a7;
@@ -145,7 +157,10 @@
     width: 100% ;
   }
   @include respond-to(md){
-    max-height: 129px;
+    height: 138px;
+    img{
+      max-width: 140px;
+    }
   }
 }
 
@@ -156,9 +171,9 @@
 
   @include respond-to(md){
     left: 109px;
-    bottom: -102px;
+    bottom: -71px;
   }
   @include respond-to(lg){
-    left: 210px;
+    left: 196px;
   }
 }

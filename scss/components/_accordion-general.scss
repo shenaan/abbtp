@@ -1,6 +1,6 @@
 .accordion-item {
   background-color: #fff;
-  padding: $gap * 0.5 15px;
+  padding: 18.5px 15px;
   margin-bottom: 30px;
 
   &:last-of-type{
@@ -15,14 +15,14 @@
   }
 
   @include respond-to(md) {
-    padding: $gap * 0.5 20px;
+    padding: 18.5px 20px;
     margin-bottom: $gap;
   }
 }
 
 .accordion-item__head {
   display: flex;
-  border-bottom: 1px solid #939292;
+  border-bottom: 1.5px solid #939292;
   padding-bottom: $gap * 0.5;
   h2 {
     line-height: 1;
@@ -41,8 +41,8 @@
   span {
     position: relative;
     display: block;
-    width: 25px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
     background-color: $yellow-color;
     @include transition();
     &.is-hidden {
@@ -58,16 +58,28 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        height: 25px;
-        width: 2px;
+        height: 30px;
+        width: 3px;
         background-color: $yellow-color;
+        @include transition();
+      }
+    }
+  }
+
+  &:hover{
+    span{
+      background-color: $text-color;
+      &.plus{
+        &:after{
+          background-color: $text-color;
+        }
       }
     }
   }
 }
 
 .accordion-item__body {
-  padding-top: 13px;
+  padding-top: 8px;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -85,10 +97,10 @@
     color: $dark-color;
   }
   @include respond-to(md){
-    padding-right: 28px;
+    padding-right: 15px;
     order: 0;
-    width: 60%;
-    max-width: 60%;
+    width: 61%;
+    max-width: 61%;
   }
 }
 
@@ -119,7 +131,7 @@
 }
 
 .accordion-item__btn-more {
-  margin-top: 27px;
+  margin-top: 30px;
 }
 
 .accordion-item__img {
@@ -134,9 +146,11 @@
     order: 1;
     right: 0;
     top: 0;
-    width: 40%;
-    max-width: 40%;
-    padding-top: 9px;
+    width: 38%;
+    max-width: 38%;
+    max-height: 183px;
+    overflow: hidden;
+    padding: 13px 10px 0;
     margin-bottom: 0;
   }
 }

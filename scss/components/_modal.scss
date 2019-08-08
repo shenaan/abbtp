@@ -66,7 +66,7 @@
   background-color: transparent;
   border-radius: 0 !important;
   position: absolute;
-  top: 17px;
+  top: 11px;
   right: 11px;
   cursor: pointer;
   outline: none;
@@ -80,6 +80,10 @@
       stroke-width: 15px;
       stroke: $dark-color;
     }
+  }
+  @include respond-to(sm){
+    top: 17px;
+    right: 11px;
   }
 }
 

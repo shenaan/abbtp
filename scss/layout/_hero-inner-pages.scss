@@ -2,26 +2,42 @@
   position: relative;
   padding-bottom: $gap;
   min-height: 313px;
-
+  .container{
+    display: flex;
+    min-height: 313px;
+    max-height: 313px;
+    justify-content: center;
+  }
   &.no-padding{
     padding-bottom: 0;
 
     .page-submenu__outer-return{
-      bottom: $gap * 0.5;
+      bottom: 13.5px;
     }
   }
 
   .hero__text-wrap {
     min-height: 10px !important;
     height: auto;
-    padding: 190px 0 90px 0;
+    //padding: 190px 0 90px 0;
+    margin-top: auto;
+    margin-bottom: 90px;
+    padding: 0;
     color: #fff;
   }
   @include respond-to(md) {
-    min-height: 371px;
+    min-height: 388px;
     padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    .container{
+      min-height: 1px;
+      max-height: none;
+      display: block;
+    }
     .hero__text-wrap {
-      padding: 237px 0 52px 0;
+      padding: 242px 0 47px 0;
+      margin-bottom: 0;
     }
   }
 }

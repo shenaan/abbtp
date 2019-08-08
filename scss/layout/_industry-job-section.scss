@@ -1,0 +1,7 @@
+.industry-jobs__section{
+  @include respond-to(md){
+    .content-cards__list-item{
+      margin-bottom: $gap;
+    }
+  }
+}

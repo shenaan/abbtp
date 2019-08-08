@@ -8,6 +8,7 @@
 	text-align: center;
 	position: relative;
 	@include transition;
+  cursor: pointer;
 	&--white-outline{
 		border-color: $white-color;
 	    font-weight: 300;
@@ -52,7 +53,7 @@
 	&--white{
 		color: $text-color;
 		font-weight: bold;
-    	padding: 9px 24px;
+    padding: 9px 24px;
 		font-size: 1.1rem;
 		background: $white-color;
 		&:hover{

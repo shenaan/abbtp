@@ -42,12 +42,12 @@
       line-height: 1.5rem;
     }
   }
-  @include respond-to(md){
+  @include respond-to(sm){
     order: 0;
     width: calc(100% - 250px);
     max-width: calc(100% - 250px);
     p{
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
   }
   @include respond-to(lg){
@@ -105,14 +105,15 @@
     min-width: 138px;
     white-space: nowrap;
   }
-  @include respond-to(md) {
-    max-width: 200px;
+  @include respond-to(sm) {
+    width: 200px;
     order: 1;
     margin-left: auto;
     margin-bottom: 0;
   }
   @include respond-to(lg){
-    max-width: 300px;
+    width: 234px;
+    max-width: 234px;
   }
 }
 
@@ -137,6 +138,9 @@
     width: 100% ;
   }
   @include respond-to(md){
-    max-height: 129px;
+    height: 138px;
+    img{
+      max-width: 140px;
+    }
   }
 }

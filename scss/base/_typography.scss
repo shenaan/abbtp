@@ -95,16 +95,18 @@ p {
 }
 
 .link-more {
-  display: flex;
-  align-items: center;
+  display: block;
+  //align-items: center;
   letter-spacing: 0;
   font-weight: bold;
   line-height: 18px;
   &:after{
     content: '';
     display: inline-block;
-    margin-left: 3px;
-    margin-top: 2px;
+    align-self: center;
+    vertical-align: middle;
+    margin-left: 5px;
+    //margin-top: 1px;
     width: 10px !important;
     height: 15px;
     background: url(../img/arrow-right.svg)no-repeat center/contain;

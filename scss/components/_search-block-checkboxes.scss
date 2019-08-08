@@ -16,6 +16,12 @@
   &:last-of-type{
     margin-right: 0;
   }
+  .form__checkbox-text{
+    line-height: 1.2;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 3px;
+  }
   @include respond-to(xs){
     width: 50%;
     max-width: 50%;
@@ -23,7 +29,14 @@
   @include respond-to(md){
     width: auto;
     max-width: none;
-    margin-right: 80px;
+    margin-right: 87px;
     margin-bottom: 15px;
+    .form__checkbox-container{
+      padding-left: 36px;
+    }
+    .form__checkbox-text{
+      font-size: 1.1rem;
+      padding-top: 0;
+    }
   }
 }

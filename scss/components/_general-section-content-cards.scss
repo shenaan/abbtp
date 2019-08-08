@@ -11,16 +11,23 @@
   justify-content: center;
   img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
+    margin: auto;
+
+    @include ieStyles{
+      height: auto;
+      min-height: 100%;
+    }
   }
   @include respond-to(sm){
     height: 300px;
   }
 
   @include respond-to(lg){
-    height: 350px;
+    height: 366px;
   }
 }
 
@@ -28,7 +35,7 @@
   padding: 0 15px $gap;
   h2{
     line-height: 1;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
   p{
     line-height: 1.22rem;
@@ -38,4 +45,6 @@
     color: $text-color;
   }
 }
+
+
 

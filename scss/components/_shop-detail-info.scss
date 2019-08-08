@@ -35,6 +35,10 @@
 
 .shop-detail__info-action {
   padding-bottom: 35px;
+  
+  .btn{
+    cursor: pointer;
+  }
 
   @include respond-to(md) {
     padding-bottom: $gap;

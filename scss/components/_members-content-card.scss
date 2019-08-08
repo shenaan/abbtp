@@ -13,21 +13,37 @@
 .members__card-media {
   border: 5px solid #a8a7a7;
   background-color: #fff;
-  height: 190px;
-  padding: 16px 30px;
+  //height: 190px;
+  //padding: 16px 30px;
   &--black {
     background-color: #000;
+  }
+  picture, img{
+    height: 100%;
+    max-width: 100%;
+    width:  auto;
+    margin: auto;
+    @include ieStyles{
+      margin: 0;
+      height: 93%;
+      max-height: 100%;
+      min-height: 10px;
+    }
   }
   img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     margin: auto;
+    @include ieStyles{
+      width: auto;
+      min-width: auto;
+      height: 93%;
+    }
   }
 
   @include respond-to(md) {
     border-width: 10px;
-    padding: 22px 60px;
     img{
       max-height: 100%;
     }
