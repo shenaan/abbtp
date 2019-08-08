@@ -5336,7 +5336,7 @@ blockquote {
   width: 100%; }
 
 .form__checkbox-wrap.filter-events__checkbox .checkmark {
-  top: 1px; }
+  top: -1px; }
 
 .form__checkbox-wrap.training-events__checkbox .form__checkbox-container {
   padding-left: 0; }
@@ -5350,6 +5350,10 @@ blockquote {
 @media (min-width: 572px) {
   .form__checkbox-wrap.training-events__checkbox .checkmark {
     margin-top: auto; } }
+
+@media (min-width: 1024px) {
+  .form__checkbox-wrap.filter-events__checkbox .checkmark {
+    top: -1px; } }
 
 .filter-events__row {
   text-align: left;
