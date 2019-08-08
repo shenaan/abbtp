@@ -5351,10 +5351,6 @@ blockquote {
   .form__checkbox-wrap.training-events__checkbox .checkmark {
     margin-top: auto; } }
 
-@media (min-width: 1024px) {
-  .form__checkbox-wrap.filter-events__checkbox .checkmark {
-    top: -1px; } }
-
 .filter-events__row {
   text-align: left;
   -ms-flex-wrap: wrap;
