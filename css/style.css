@@ -5876,7 +5876,8 @@ blockquote {
   .search-block__checkbox-item .form__checkbox-text {
     line-height: 1.2;
     vertical-align: top;
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 2px; }
   @media (min-width: 572px) {
     .search-block__checkbox-item {
       width: 50%;
@@ -5890,7 +5891,8 @@ blockquote {
       .search-block__checkbox-item .form__checkbox-container {
         padding-left: 36px; }
       .search-block__checkbox-item .form__checkbox-text {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        padding-top: 0; } }
 
 .search-suggestions__list {
   display: -webkit-box;
