@@ -3482,7 +3482,11 @@ section {
     height: 40px; }
   .registration-section .form__checkbox-wrap .checkmark {
     margin-right: 15px;
-    border-color: #2E2D2C; }
+    border-color: #2E2D2C;
+    top: -2px; }
+    @media (min-width: 1024px) {
+      .registration-section .form__checkbox-wrap .checkmark {
+        top: 0; } }
   .registration-section .form__checkbox-wrap .form__checkbox-container {
     padding-left: 40px; }
   .registration-section .form__checkbox-text {
@@ -3619,6 +3623,12 @@ section {
 
 .registration__submit-btn {
   margin-top: 70px; }
+
+.social-media__input-label {
+  max-width: 200px; }
+  @media (min-width: 572px) {
+    .social-media__input-label {
+      max-width: 522px; } }
 
 .job-post-section {
   padding: 0 0 125px; }
